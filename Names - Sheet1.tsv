@@ -1,0 +1,93 @@
+Node Number	Bin	Bin count	Full node name	Length	FULL FINAL name	X	Check the greyed Names 
+10	66	1	NODE_10_length_530803_cov_27.844244	530803	Mchoodvirus		
+2	138	1	NODE_2_length_494840_cov_20.338171	494840	Bulbasaurvirus		
+13	23	1	NODE_13_length_437424_cov_10.394975	437424	Ampharosvirus		
+21	115	1	NODE_21_length_359293_cov_28.730616	359293	Libbivirus		
+31	92	1	NODE_31_length_310192_cov_12.051322	310192	Sullivirus		
+32	90	1	NODE_32_length_308271_cov_68.115108	308271	Mikeyvirus		
+45	65	1	NODE_45_length_260841_cov_54.850299	260841	Zeevirus		
+22	19	1	NODE_22_length_234673_cov_9.044660	234673	Squirtelvirus		
+24	127	1	NODE_24_length_228201_cov_12.661348	228201	Rocheleauvirus A		
+59	26	1	NODE_59_length_228046_cov_9.080170	228046	Rocheleauvirus B		
+25	99	1	NODE_25_length_224646_cov_12.118972	224646	Evanescencevirus		
+66	105	1	NODE_66_length_219660_cov_12.834271	219660	Charmandervirus		
+29	120	3	NODE_29_length_216869_cov_8.342114	216869	Roovirus		
+4	9	1	NODE_4_length_216371_cov_11.152869	216371	Franksvirus A		
+17	14	1	NODE_17_length_216371_cov_18.980394	216371	Franksvirus B		
+30	50	1	NODE_30_length_216371_cov_49.359141	216371	Franksvirus C		
+69	70	1	NODE_69_length_216371_cov_170.104967	216371	Franksvirus D		
+74	117	4	NODE_74_length_208099_cov_11.159481	208099	Kobivirus		
+56			NODE_56_length_165503_cov_163.910044	165503	Lutumvirus	Group I	
+122			NODE_122_length_165216_cov_6.504907	165216	Hortusvirus	Singleton A	
+131			NODE_131_length_158591_cov_10.679051	158591	Calorovirus	Singleton B	
+139			NODE_139_length_156375_cov_29.966729	156375	Havarovirus	Group G	
+9			NODE_9_length_151760_cov_33.060387	151760	Solovirus	Group I	
+79			NODE_79_length_144212_cov_12.179998	144212	Kruegervirus	Group D	
+83			NODE_83_length_140072_cov_6.815501	140072	Bodenvirus	Group J	
+90			NODE_90_length_134671_cov_74.528711	134671	Boubactervirus	NA 1	
+15			NODE_15_length_134642_cov_13.571296	134642	Ropavirus	NA 2	
+33			NODE_33_length_133768_cov_36.018659	133768	Batesvirus	Group D	
+103			NODE_103_length_125211_cov_9.677818	125211	Arlocitovirus	Group C	
+120			NODE_120_length_119263_cov_5.494170	119263	Grodbactervirus	NA 3	
+231			NODE_231_length_115040_cov_14.505405	115040	Frankenvirus	Group D	
+242			NODE_242_length_112252_cov_11.014715	112252	Jorbactervrius	NA 4	
+302			NODE_302_length_99052_cov_5.086275	99052	Cthulhuvirus	Group B	
+191			NODE_191_length_96513_cov_11.863474	96513	Ilebactervirus	Group J	
+75			NODE_75_length_95620_cov_11.910386	95620	Hydevirus	Group D	
+76			NODE_76_length_95586_cov_51.474935	95586	Lupabactervirus	Group J	
+80			NODE_80_length_93691_cov_27.479484	93691	Erdbactervirus	NA 5	
+203			NODE_203_length_92089_cov_15.320599	92089	Indigovirus	Group H	
+205			NODE_205_length_91902_cov_8.464294	91902	Caudavirus	Singleton G	
+217			NODE_217_length_90386_cov_13.855786	90386	Gerrivirus	Singleton F	
+375			NODE_375_length_88112_cov_5.336100	88112	Amherstvirus	Group G	
+78			NODE_78_length_78614_cov_17.400132	78614	Muscovirus	Singleton D	
+304			NODE_304_length_77220_cov_9.869241	77220	Asipovirus	Group E	
+88			NODE_88_length_76965_cov_5.090261	76965	Hydravirus	Group E	
+312			NODE_312_length_76305_cov_4.985443	76305	Solibactervirus	NA 6	
+94			NODE_94_length_74753_cov_5.480227	74753	Solobactervirus	NA 7	
+502			NODE_502_length_74578_cov_13.192893	74578	Bodenvirus	Group L	
+147			NODE_147_length_73830_cov_7.674063	73830	Fatevirus	Singleton K	
+537			NODE_537_length_71561_cov_24.082259	71561	Mustivirus	Singleton H	
+354			NODE_354_length_71403_cov_5.166087	71403	Jorbactervirus	NA 8	
+548			NODE_548_length_70417_cov_7.519727	70417	Peterhamvirus	Group G	
+120			NODE_120_length_69123_cov_5.608820	69123	Petravirus	Singleton C	
+123			NODE_123_length_69007_cov_11.219080	69007	Krakenvirus	Group E	
+392			NODE_392_length_68441_cov_6.708420	68441	Cerbervirus	Group B	
+131			NODE_131_length_68392_cov_14.632044	68392	Bodenvirus	NA 9	
+134			NODE_134_length_67992_cov_9.543562	67992	Basobactervirus	Group J	
+136			NODE_136_length_67953_cov_28.448864	67953	Agrumvirus	Group I	
+601			NODE_601_length_66881_cov_8.678523	66881	Ilebactervirus	NA 10	
+604			NODE_604_length_66728_cov_5.513566	66728	Labbuvirus	Group E	
+610			NODE_610_length_66464_cov_15.652547	66464	Levirus	Group E	
+642			NODE_642_length_64556_cov_4.358041	64556	Sapphirevirus	Group H	
+158			NODE_158_length_62999_cov_22.363339	62999	Katvirus	Singleton I	
+707			NODE_707_length_61633_cov_6.513349	61633	Carrivirus	Group D	
+174			NODE_174_length_61003_cov_56.863900	61003	Nemusvirus	Group C	
+179			NODE_179_length_60142_cov_46.483249	60142	Rosevirus	Group H	
+544			NODE_544_length_58732_cov_8.164732	58732	Humusvirus	Group I	
+782			NODE_782_length_58481_cov_72.392428	58481	Siamvirus	Group H	
+784			NODE_784_length_58363_cov_6.193318	58363	Silvavirus	Group C	
+562			NODE_562_length_57712_cov_56.765683	57712	Lupabactervirus	NA 11	
+204			NODE_204_length_57560_cov_5.928493	57560	Nguruvirus	Group E	
+46			NODE_46_length_57558_cov_11.367824	57558	Jaspervirus	Group H	
+835			NODE_835_length_56451_cov_23.820679	56451	Woudbactervirus	NA 13	
+608			NODE_608_length_56252_cov_50.284339	56252	Arbobactervirus	NA 14	
+631			NODE_631_length_55524_cov_55.751627	55524	Jadevirus	Group H	
+642			NODE_642_length_55177_cov_33.870524	55177	Yacuvirus	Group E	
+314			NODE_314_length_54263_cov_6.669108	54263	Lapisvirus	Group H	
+911			NODE_911_length_53678_cov_5.478209	53678	Forebactervirius	NA 15	
+689			NODE_689_length_53578_cov_4.904882	53578	Mesabactervirus	NA	
+244			NODE_244_length_53450_cov_70.091956	53450	Sussivirus	Singleton H	
+934			NODE_934_length_53062_cov_8.409097	53062	Lepobactervirus	NA	
+56			NODE_56_length_53017_cov_6.776670	53017	Lelevirus	Singleton I	
+255			NODE_255_length_52362_cov_11.982966	52362	Normavirus	Singleton E	
+256			NODE_256_length_52225_cov_23.423903	52225	Cotidavirus	Singleton E	
+967			NODE_967_length_51712_cov_9.196856	51712	Cenavrius	Group F	
+282			NODE_282_length_51151_cov_5.177450	51151	Ropavirus	Group L	
+1016			NODE_1016_length_50660_cov_25.094437	50660	Lepobactervirus	NA	
+1017			NODE_1017_length_50649_cov_67.154979	50649	Parubactervirus	NA	
+1027			NODE_1027_length_50445_cov_7.281207	50445	Babactervirus	NA	
+774			NODE_774_length_50414_cov_13.932425	50414	Atasivirus	Group C	
+1032			NODE_1032_length_50342_cov_82.425120	50342	Prandivirus	Group F	
+298			NODE_298_length_50279_cov_20.554356	50279	Waldovrius	Singleton J	
+301			NODE_301_length_50115_cov_5.640691	50115	Alabactervirus	NA	
