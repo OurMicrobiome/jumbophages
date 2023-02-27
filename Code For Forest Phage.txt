@@ -1,0 +1,323 @@
+﻿# Pipeline 1-> Based on Viral-id-sop Viral sequence identification SOP with VirSorter2 (protocols.io)
+
+
+# Sets up environment viral-id-sop with virsorter, checkv, and DramV 
+> conda create -n viral-id-sop virsorter=2 checkv dram
+# activates the env
+> conda activate viral-id-sop
+
+
+# downloads database required for vs2: db-vs2
+> virsorter setup -d db-vs2 -j 4
+# downloads database required for checkv: checkv-db-v1.2
+> checkv download_database .
+# downloads database required for DRAMv: db-dramv
+> DRAM-setup.py prepare_databases --skip_uniref --output_dir db-dramv
+
+
+# Takes in a .fa or .fasta file containing contigs and runs virsorter2. It produces a file vs2-pass1 
+> virsorter run --keep-original-seq -i [name_of_fastafile.fa] -w vs2-pass1 --include-groups dsDNAphage,ssDNA --min-length 5000 --min-score 0.5 -j 28 all
+
+
+# Runs checkv on the files produced by vs2-pass1 
+checkv end_to_end vs2-pass1/final-viral-combined.fa checkv -t 28 -d [checkv-db-v1.0 file location] 
+
+
+# Combines the output files of checkv into combined.fna 
+cat checkv/proviruses.fna checkv/viruses.fna > checkv/combined.fna
+
+
+# Runs a second pass of virsorter on the cleaned data from checkv, and preps for DRAMv
+virsorter run --seqname-suffix-off --viral-gene-enrich-off --provirus-off --prep-for-dramv -i checkv/combined.fna -w vs2-pass2 --include-groups dsDNAphage,ssDNA --min-length 5000 --min-score 0.5 -j 28 all
+
+
+# Uses Dramv’s annotate function on the data from virsorter pass 2
+DRAM-v.py annotate -i vs2-pass2/for-dramv/final-viral-combined-for-dramv.fa -v vs2-pass2/for-dramv/viral-affi-contigs-for-dramv.tab -o dramv-annotate --skip_trnascan --threads 28 --min_contig_size 1000
+
+
+# Uses Dramv’s distill function 
+DRAM-v.py distill -i dramv-annotate/annotations.tsv -o dramv-distill
+
+
+
+
+
+
+
+
+
+
+
+
+# Pipeline 2 -> vContact, Cytoscape
+
+
+# Create new environment vContact2 with python 3
+> conda create --name vContact2 python=3
+
+
+# activate vConatct2 environment 
+> source activate vContact2
+
+
+# Install vcontact 2, mcl, blast, and diamond
+> conda install -y -c bioconda vcontact2
+> conda install -y -c bioconda mcl blast diamond
+
+
+# Install ClusterONE
+> wget http://www.paccanarolab.org/static_content/clusterone/cluster_one-1.0.jar
+cp cluster_one-1.0.jar $HOME/conda/bin/
+
+
+
+
+# Change to file with dramv-annotate 
+> cd dramv-annotate
+
+
+# Create gene2genome mapping file 
+vcontact2_gene2genome -p genes.faa -o gene2genome.csv -s 'Prodigal-FAA'
+
+
+# Change out of dramv-annotate and run vcontact2 
+> cd ..
+# Note check database for newer ProkaryoticViralRefSeq
+> vcontact --raw-proteins [proteins file] --rel-mode ‘Diamond’ --proteins-fp [gene-to-genome mapping file] --db 'ProkaryoticViralRefSeq94-Merged' --pcs-mode MCL --vcs-mode ClusterONE --c1-bin [path to ClusterONE] --output-dir [target output directory]
+
+
+# This produces a .ntw file which can then be visualized in Cytoscape 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Pipeline 3 -> Virsorter Data, Mafft, Iqtree, Itol 
+
+
+# Use python file Hallmark-genes.GV.py  (attached in github) with final-viral-combined.fa produced by Virsorter and database of hallmark genes found in db-vs2
+> python Hallmark-genes.GV.py [final-viral-combined.fa] ./db-vs2/group/dsDNAphage/hallmark-gene.list
+
+
+# Sort the hallmark gene file for trait you are interested in, in our case it was Large-Terminase- Subunit and save the hallmark genes to a .faa file 
+
+
+# Create environment Tree
+> conda create -n tree -c bioconda MAFFT iqtree 
+
+
+# Align sequences with Mafft
+> mafft HALLMARK.faa (or HALLMARK.fasta) > aligned.phy
+
+
+# Create treefile with iqtree 
+> iqtree -s aligned.phy
+
+
+# Results in a aligned.phy.treefile that can be vizualized in itol or any newick format tree viewer 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pipeline 4 -> PhaGCN 1 and PhaGCN 2
+
+
+# Copy github repo (GitHub - KennthShang/PhaGCN: GCN classifier for phage taxanomy classification) 
+> git clone https://github.com/KennthShang/PhaGCN.git
+
+
+# Change to newly created folder 
+> cd PhaGCN 
+
+
+# Create and activate phagcn enviroment based on environment.yaml 
+
+
+> conda env create -f environment.yaml -n phagcn
+> conda activate phagcn
+
+
+# As lens, which is length of the contigs you want to predict, increases accuracy increases, but 8000 has been shown to be effective for most phages but recommend higher if focusing on jumbophages. 
+>  python run_Speed_up.py --contigs [file containing contigs of phages] --len 8000
+
+
+# This produces a final prediction file with predictions of the phages taxonomy and a .ntw which can visualize the genome wide clustering
+
+
+# Clone github repo (GitHub - KennthShang/PhaGCN2.0) 
+> git clone https://github.com/KennthShang/PhaGCN2.0.git
+
+
+# Change to the newly created file PhaGCN2.0
+> cd PhaGCN2.0
+
+
+# Create and activate phagcn2 enviroment based on environment.yaml 
+> conda env create -f environment.yaml -n phagcn2
+> conda activate phagcn2
+> export MKL_SERVICE_FORCE_INTEL=1
+
+
+# The database file needs to be un-gunzip before using 
+> cd database
+> tar -zxvf ALL_protein.tar.gz
+> cd ..
+
+
+# Run the pythonscript run_Speed_up.py with –contigs as .fa containing a .fa file with contigs for phages, and –len being the estimated length of the contigs 
+> python run_Speed_up.py --contigs [file containing contigs of phages] --len 8000
+
+
+Hallmark-genes.GV.py 
+
+
+# hallmark-genes.GV.py
+# Aprogram to get fasta sequences of hallmark genes from a selected bin
+# hallmark-gene.list is in VirSorter2/db/group/NCLDV
+# python hallmark-genes_GV.py metabat_A1/Bins/bin.049.fasta.out
+
+
+import os, sys
+
+
+## Add a check to see if there is the right number of arguments 
+print("Name of Program: ", sys.argv[0])
+print ("How many arguments?", len(sys.argv))
+print ("What are the arguments? " , str(sys.argv))
+if len(sys.argv) != 2 :
+    print("This program takes as input a directory containing the virsorter results")
+    sys.exit(2)
+virsorter_dir = sys.argv[1];
+
+
+# open file with all halmark genes used by VirSorter2
+infile1 = open('hallmark-gene.list', 'r')
+hallmark_list = infile1.readlines()
+
+
+# open the outfile
+outfilename = virsorter_dir.replace('/', '.')
+outfilename = outfilename.replace('.Bins', '')
+outfilename = outfilename.replace('.fasta.out', '')
+outfile = open(outfilename + '.hallmark.gv2.faa', 'w')
+
+
+
+
+   
+# open virus gene file
+infile2 = open(virsorter_dir + '/iter-0/all.pdg.hmm.taxwhm', 'r')
+virus_list = infile2.readlines()
+
+
+# open faa file
+infile3 = open(virsorter_dir + '/iter-0/all.pdg.faa', 'r')
+faa_list = infile3.readlines()
+
+
+# make a dictionary of the virus gene file with ID and contig name
+
+
+dict_virus = {}       
+for line in virus_list :
+
+
+    if not line.startswith('#') :
+        line_list = line.split('\t')
+        contig_ID = line_list[0]
+        contig_ID = contig_ID.strip()
+        virus_ID = line_list[2]
+        virus_ID = virus_ID.strip()
+        dict_virus[contig_ID] = virus_ID
+
+
+# make a dictionary of contig IDs with hallmark genes and make a dictionary with annotation
+
+
+dict_hallmark = {} 
+dict_annotation = {}
+for gene in hallmark_list :
+    gene = gene.strip()
+    gene_list = gene.split('\t')
+    ID = gene_list[0]
+    annotation = gene_list[1]
+    dict_annotation[ID] = annotation
+    for key in dict_virus :
+        virus_ID = dict_virus[key]
+        if virus_ID == ID :
+            dict_hallmark[key] = ID
+            
+# get fasta sequence for each hallmark gene
+
+
+dict_faa = {} 
+current_faa_ID = ''
+for line in faa_list :
+    line = line.strip()
+    if line.startswith(">") :
+        line = line.replace('>', '')
+        line_list = line.split(' # ')
+        current_faa_ID = line_list[0]
+        dict_faa[current_faa_ID] = ""
+    else :
+        dict_faa[current_faa_ID] += line
+
+
+#  Write out a file with the file mark gee
+
+
+for key in dict_hallmark :
+    virus_gene = dict_hallmark[key]
+    protein = dict_faa[key]
+    annotation = dict_annotation[virus_gene]
+    outfile.write('>%s|%s|%s\n' % (key, virus_gene, annotation))
+    outfile.write('%s\n' % (protein))
