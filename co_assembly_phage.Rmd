@@ -1,0 +1,115 @@
+---
+title: "Targeted enrichment and discovery of jumbo phages"
+author: "Jeffrey Blanchard"
+date: "5/4/2023"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    theme: united
+    highlight: tango
+---
+
+# This report is an analysis of the Barre Woods filter metagenomes from the combined assembly  Assembly, binning, quality control and classification was done on KBase
+(https://narrative.kbase.us/narrative/145971. The checkv and virsorter files were downloaded to this project folder.
+
+## Load Libraries
+
+```{r}
+# Load libraries
+library(tidyverse)
+library(DT)
+```
+
+## Import Data
+
+### Import
+
+```{r}
+virsorter <- read_tsv("data_combined_assembly/virsorter-final-viral-score.tsv") %>% 
+  filter(max_score_group == "dsDNAphage") %>% 
+  select(-c(dsDNAphage, ssDNA, NCLDV, lavidaviridae)) %>% 
+  rename("contig_id" = "seqname")
+
+checkv <- read_tsv("data_combined_assembly/checkv_quality_summary.tsv") 
+
+vcontact <- read_csv("data_combined_assembly/vcontact_genome_by_genome_overview.csv") 
+
+vcontact_ntw <- read_table("data_combined_assembly/coa-vcontact_c1.ntw", col_names = FALSE) 
+```
+
+### Join checkv and virsorter dataframes
+
+```{r}
+virsorter_checkv <- left_join(virsorter, checkv, by = "contig_id")
+```
+
+### filter to high quality and complete
+
+```{r}
+virsorter_checkv_HQ <- virsorter_checkv %>% 
+  filter(checkv_quality == "Complete" | checkv_quality == "High-quality")
+```
+
+### join with vcontact results
+```{r}
+virsorter_checkv_HQ_vcontact <- left_join(virsorter_checkv_HQ, vcontact, by = c("contig_id" = "Genome"))
+```
+
+### filter vcontact network based on HQ genomes
+
+```{r}
+HQ_contigs <- pull(virsorter_checkv_HQ, contig_id)  
+vcontact_ntw_HQ <- vcontact_ntw %>% 
+filter(X1 %in% HQ_contigs | X2 %in% HQ_contigs)
+```
+
+### Write files
+```{r, eval=FALSE}
+# write summary file
+write_tsv(virsorter_checkv, "data_combined_assembly/coa-virsorter_checkv.tsv") 
+write_tsv(virsorter_checkv_HQ, "data_combined_assembly/coa-virsorter_checkv_HQ.tsv") 
+write_tsv(virsorter_checkv_HQ_vcontact, "data_combined_assembly/coa-virsorter_checkv_HQ_vcontact.tsv") 
+write.table(vcontact_ntw_HQ, "data_combined_assembly/vcontact_ntw_HQ.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+```
+
+## Data analysis
+
+### Barchart of checkv_quality
+```{r}
+virsorter_checkv %>% 
+ggplot(aes(x = checkv_quality)) + 
+  geom_bar() 
+```
+
+### Table with % checkv_quality in each category
+```{r}
+virsorter_checkv %>% 
+  mutate(across(checkv_quality, as_factor)) %>% 
+  group_by(checkv_quality) %>% 
+  summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+```
+
+
+### Histogram
+
+```{r}
+virsorter_checkv %>% 
+ggplot(aes(x = length, fill = checkv_quality)) + 
+  geom_histogram(colour = "black",  binwidth=10000) +
+  ggtitle("Genome size of Phage") +
+  xlab("Genome size") + 
+  theme(text = element_text(size = 20, color="black"))
+  theme(axis.text.x = element_text(angle = 90)) 
+```
+
+```{r}
+virsorter_checkv_HQ %>% 
+ggplot(aes(x = length, fill = checkv_quality)) + 
+  geom_histogram(colour = "black",  binwidth=10000) +
+  ggtitle("Genome size of Phage") +
+  xlab("Genome size") + 
+  #theme(text = element_text(size = 20, color="black"))
+  theme(axis.text.x = element_text(angle = 45)) 
+```
