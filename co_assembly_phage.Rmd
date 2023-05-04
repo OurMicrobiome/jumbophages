@@ -91,7 +91,6 @@ virsorter_checkv %>%
   mutate(freq = n / sum(n))
 ```
 
-
 ### Histogram
 
 ```{r}
