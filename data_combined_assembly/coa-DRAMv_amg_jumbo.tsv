@@ -1,0 +1,104 @@
+gene	scaffold	gene_id	gene_description	category	header	subheader	module	auxiliary_score	amg_flags
+Contig123250987||full_4	Contig123250987||full	NA	NA	NA	NA	NA	NA	2	MKF
+Contig123250987||full_33	Contig123250987||full	K00762	orotate phosphoribosyltransferase [EC:2.4.2.10] [RN:R01870]	MISC	Information systems	Nucleotide	Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP	2	MK
+Contig123250987||full_40	Contig123250987||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	M
+Contig123250987||full_102	Contig123250987||full	K01939	adenylosuccinate synthase [EC:6.3.4.4] [RN:R01135]	MISC	Information systems	Nucleotide	Adenine ribonucleotide biosynthesis, IMP => ADP,ATP	1	M
+Contig123250987||full_236	Contig123250987||full	K00943	dTMP kinase [EC:2.7.4.9] [RN:R02094]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig123250987||full_246	Contig123250987||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig123250987||full_250	Contig123250987||full	K01494	dCTP deaminase [EC:3.5.4.13] [RN:R02325]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig123250987||full_251	Contig123250987||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig123250987||full_338	Contig123250987||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig133367609||full_89	Contig133367609||full	K02970	small subunit ribosomal protein S21	MISC	Information systems	NA	Ribosome, bacteria	1	M
+Contig133367609||full_103	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_108	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_144	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_198	Contig133367609||full	S51	Catlytic type: Serine; hydrolyses Asp-Xaa dipeptides in which Xaa is not Glu, Asn or Gln; nutritional function in bacteria	Organic Nitrogen	Peptidase	NA	Exopeptidases that hydrolyse alpha-aspartyl bonds	1	M
+Contig133367609||full_230	Contig133367609||full	K01885	glutamyl-tRNA synthetase [EC:6.1.1.17] [RN:R05578]	MISC	Antibiotic Resistance	NA	Siroheme biosynthesis, glutamate => siroheme	1	MK
+Contig133367609||full_230	Contig133367609||full	K01885	EARS; glutamyl-tRNA synthetase [EC:6.1.1.17]	MISC	Information systems	NA	Aminoacyl-tRNA biosynthesis, eukaryotes	1	MK
+Contig133367609||full_245	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_365	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_378	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_471	Contig133367609||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig133367609||full_478	Contig133367609||full	K00088	IMP dehydrogenase [EC:1.1.1.205] [RN:R01130]	MISC	Information systems	Nucleotide	Guanine ribonucleotide biosynthesis IMP => GDP,GTP	1	M
+Contig133367609||full_493	Contig133367609||full	M24A	Catlytic type: Metallo; cleave the Met-Xaa (where Xaa is any amino acid) bond in the removal of the initiating N-terminal methionine from newly synthesized proteins; essential for the removal of the initiating methionine of many proteins, acting co-translationally in association with the ribosomes	Organic Nitrogen	Peptidase	NA	Exopeptidases that require co-catalytic ions of cobalt or manganese	1	M
+Contig133367609||full_499	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_528	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_531	Contig133367609||full	GT2	GT2 cellulose synthase (EC 2.4.1.12); chitin synthase (EC 2.4.1.16); dolichyl-phosphate beta-D-mannosyltransferase (EC 2.4.1.83); dolichyl-phosphate beta-glucosyltransferase (EC 2.4.1.117); N-acetylglucosaminyltransferase (EC 2.4.1.-); N-acetylgalactosaminyltransferase (EC 2.4.1.-); hyaluronan synthase (EC 2.4.1.212); chitin oligosaccharide synthase (EC 2.4.1.-); beta-1,3-glucan synthase (EC 2.4.1.34); beta-1,4-mannan synthase (EC 2.4.1.-); beta-mannosylphosphodecaprenol-mannooligosaccharide alpha-1,6-mannosyltransferase (EC 2.4.1.199); UDP-Galf: rhamnopyranosyl-N-acetylglucosaminyl-PP-decaprenol beta-1,4/1,5-galactofuranosyltransferase (EC 2.4.1.287); UDP-Galf: galactofuranosyl-galactofuranosyl-rhamnosyl-N-acetylglucosaminyl-PP-decaprenol beta-1,5/1,6-galactofuranosyltransferase (EC 2.4.1.288); dTDP-L-Rha: N-acetylglucosaminyl-PP-decaprenol alpha-1,3-L-rhamnosyltransferase (EC 2.4.1.289)	carbon utilization	CAZY	NA	GlycosylTransferases	1	M
+Contig133367609||full_532	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig133367609||full_579	Contig133367609||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig139899753||full_310	Contig139899753||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	MT
+Contig139899753||full_316	Contig139899753||full	K00088	IMP dehydrogenase [EC:1.1.1.205] [RN:R01130]	MISC	Information systems	Nucleotide	Guanine ribonucleotide biosynthesis IMP => GDP,GTP	1	MT
+Contig139899753||full_335	Contig139899753||full	M24A	Catlytic type: Metallo; cleave the Met-Xaa (where Xaa is any amino acid) bond in the removal of the initiating N-terminal methionine from newly synthesized proteins; essential for the removal of the initiating methionine of many proteins, acting co-translationally in association with the ribosomes	Organic Nitrogen	Peptidase	NA	Exopeptidases that require co-catalytic ions of cobalt or manganese	1	MT
+Contig139899753||full_338	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_355	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_395	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_404	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_487	Contig139899753||full	K02970	small subunit ribosomal protein S21	MISC	Information systems	NA	Ribosome, bacteria	1	MT
+Contig139899753||full_512	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_529	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_536	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_648	Contig139899753||full	S51	Catlytic type: Serine; hydrolyses Asp-Xaa dipeptides in which Xaa is not Glu, Asn or Gln; nutritional function in bacteria	Organic Nitrogen	Peptidase	NA	Exopeptidases that hydrolyse alpha-aspartyl bonds	1	MT
+Contig139899753||full_664	Contig139899753||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig139899753||full_763	Contig139899753||full	K01885	glutamyl-tRNA synthetase [EC:6.1.1.17] [RN:R05578]	MISC	Antibiotic Resistance	NA	Siroheme biosynthesis, glutamate => siroheme	2	MKT
+Contig139899753||full_763	Contig139899753||full	K01885	EARS; glutamyl-tRNA synthetase [EC:6.1.1.17]	MISC	Information systems	NA	Aminoacyl-tRNA biosynthesis, eukaryotes	2	MKT
+Contig139899753||full_768	Contig139899753||full	NA	NA	NA	NA	NA	NA	2	MKT
+Contig142949947||full_284	Contig142949947||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	MT
+Contig142949947||full_288	Contig142949947||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig142949947||full_451	Contig142949947||full	K01494	dCTP deaminase [EC:3.5.4.13] [RN:R02325]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	MT
+Contig142949947||full_456	Contig142949947||full	K00943	dTMP kinase [EC:2.7.4.9] [RN:R02094]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	MT
+Contig15618873||full_167	Contig15618873||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig15618873||full_226	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_239	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_242	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_243	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_246	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_252	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_253	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_261	Contig15618873||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig15618873||full_278	Contig15618873||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig15618873||full_281	Contig15618873||full	K01939	adenylosuccinate synthase [EC:6.3.4.4] [RN:R01135]	MISC	Information systems	Nucleotide	Adenine ribonucleotide biosynthesis, IMP => ADP,ATP	1	M
+Contig26800275||full_12	Contig26800275||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig26800275||full_138	Contig26800275||full	M36	Catlytic type: Metallo; hydrolyses laminins, elastin and collagen, with a preference for cleavage on the amino side of hydrophobic residues with bulky side-chains; a member is funalysin	Organic Nitrogen	Peptidase	NA	Endopeptidases	1	M
+Contig26800275||full_355	Contig26800275||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig26800275||full_425	Contig26800275||full	K00762	orotate phosphoribosyltransferase [EC:2.4.2.10] [RN:R01870]	MISC	Information systems	Nucleotide	Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP	1	MK
+Contig26800275||full_474	Contig26800275||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig26800275||full_537	Contig26800275||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	M
+Contig39015512||full_27	Contig39015512||full	K01494	dCTP deaminase [EC:3.5.4.13] [RN:R02325]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig39015512||full_93	Contig39015512||full	K00943	dTMP kinase [EC:2.7.4.9] [RN:R02094]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig39015512||full_317	Contig39015512||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig39015512||full_324	Contig39015512||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig39015512||full_325	Contig39015512||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_9	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_48	Contig49617119||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig49617119||full_53	Contig49617119||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig49617119||full_67	Contig49617119||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig49617119||full_70	Contig49617119||full	M24A	Catlytic type: Metallo; cleave the Met-Xaa (where Xaa is any amino acid) bond in the removal of the initiating N-terminal methionine from newly synthesized proteins; essential for the removal of the initiating methionine of many proteins, acting co-translationally in association with the ribosomes	Organic Nitrogen	Peptidase	NA	Exopeptidases that require co-catalytic ions of cobalt or manganese	1	M
+Contig49617119||full_95	Contig49617119||full	K00088	IMP dehydrogenase [EC:1.1.1.205] [RN:R01130]	MISC	Information systems	Nucleotide	Guanine ribonucleotide biosynthesis IMP => GDP,GTP	2	M
+Contig49617119||full_108	Contig49617119||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	M
+Contig49617119||full_393	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_433	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_454	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_493	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_541	Contig49617119||full	K01591	orotidine-5'-phosphate decarboxylase [EC:4.1.1.23] [RN:R00965]	MISC	Information systems	Nucleotide	Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP	2	M
+Contig49617119||full_544	Contig49617119||full	K02935	large subunit ribosomal protein L7/L12	MISC	Information systems	NA	Ribosome, bacteria	2	M
+Contig49617119||full_561	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_563	Contig49617119||full	NA	NA	NA	NA	NA	NA	2	MK
+Contig49617119||full_624	Contig49617119||full	K02935	large subunit ribosomal protein L7/L12	MISC	Information systems	NA	Ribosome, bacteria	2	M
+Contig59135421||full_225	Contig59135421||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig59135421||full_226	Contig59135421||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig59135421||full_233	Contig59135421||full	NA	NA	NA	NA	NA	NA	1	MKT
+Contig73111104||full_88	Contig73111104||full	K01520	dUTP pyrophosphatase [EC:3.6.1.23] [RN:R02100]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	M
+Contig73111104||full_89	Contig73111104||full	K00943	dTMP kinase [EC:2.7.4.9] [RN:R02094]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	2	M
+Contig73111104||full_260	Contig73111104||full	GT2	GT2 cellulose synthase (EC 2.4.1.12); chitin synthase (EC 2.4.1.16); dolichyl-phosphate beta-D-mannosyltransferase (EC 2.4.1.83); dolichyl-phosphate beta-glucosyltransferase (EC 2.4.1.117); N-acetylglucosaminyltransferase (EC 2.4.1.-); N-acetylgalactosaminyltransferase (EC 2.4.1.-); hyaluronan synthase (EC 2.4.1.212); chitin oligosaccharide synthase (EC 2.4.1.-); beta-1,3-glucan synthase (EC 2.4.1.34); beta-1,4-mannan synthase (EC 2.4.1.-); beta-mannosylphosphodecaprenol-mannooligosaccharide alpha-1,6-mannosyltransferase (EC 2.4.1.199); UDP-Galf: rhamnopyranosyl-N-acetylglucosaminyl-PP-decaprenol beta-1,4/1,5-galactofuranosyltransferase (EC 2.4.1.287); UDP-Galf: galactofuranosyl-galactofuranosyl-rhamnosyl-N-acetylglucosaminyl-PP-decaprenol beta-1,5/1,6-galactofuranosyltransferase (EC 2.4.1.288); dTDP-L-Rha: N-acetylglucosaminyl-PP-decaprenol alpha-1,3-L-rhamnosyltransferase (EC 2.4.1.289)	carbon utilization	CAZY	NA	GlycosylTransferases	1	M
+Contig73111104||full_288	Contig73111104||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig90455972||full_79	Contig90455972||full	K00943	dTMP kinase [EC:2.7.4.9] [RN:R02094]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig90455972||full_130	Contig90455972||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig90455972||full_189	Contig90455972||full	K01939	adenylosuccinate synthase [EC:6.3.4.4] [RN:R01135]	MISC	Information systems	Nucleotide	Adenine ribonucleotide biosynthesis, IMP => ADP,ATP	1	M
+Contig99511885||full_79	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_163	Contig99511885||full	K00560	thymidylate synthase [EC:2.1.1.45] [RN:R02101]	MISC	Information systems	Nucleotide	Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP	1	M
+Contig99511885||full_168	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_190	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_220	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_248	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_523	Contig99511885||full	NA	NA	NA	NA	NA	NA	1	MK
+Contig99511885||full_547	Contig99511885||full	K02913	large subunit ribosomal protein L33	MISC	Information systems	NA	Ribosome, bacteria	1	M
