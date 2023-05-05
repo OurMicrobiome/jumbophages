@@ -21,9 +21,9 @@ library(tidyverse)
 library(DT)
 ```
 
-## Import Data
-
-### Import
+## virsorter2 and vcheck
+### Data processing
+virsorter2 identifies dsDNAphages, NCLDV, ssDNA, virophages and some rna viruses in contigs. An 0.8 cutoff score is commonly used to remove potential false positives. checkv assesses the quality of contigs.
 
 ```{r}
 virsorter <- read_tsv("data_combined_assembly/virsorter-final-viral-score.tsv") %>% 
@@ -38,51 +38,37 @@ vcontact <- read_csv("data_combined_assembly/vcontact_genome_by_genome_overview.
 vcontact_ntw <- read_table("data_combined_assembly/coa-vcontact_c1.ntw", col_names = FALSE) 
 ```
 
-### Join checkv and virsorter dataframes
+#### Join checkv and virsorter dataframes
 
 ```{r}
 virsorter_checkv <- left_join(virsorter, checkv, by = "contig_id")
 ```
 
-### filter to high quality and complete
+#### filter to high quality and complete genomes
 
 ```{r}
 virsorter_checkv_HQ <- virsorter_checkv %>% 
   filter(checkv_quality == "Complete" | checkv_quality == "High-quality")
 ```
 
-### join with vcontact results
-```{r}
-virsorter_checkv_HQ_vcontact <- left_join(virsorter_checkv_HQ, vcontact, by = c("contig_id" = "Genome"))
-```
-
-### filter vcontact network based on HQ genomes
+#### filter to HQ jumbo phages
 
 ```{r}
-HQ_contigs <- pull(virsorter_checkv_HQ, contig_id)  
-vcontact_ntw_HQ <- vcontact_ntw %>% 
-filter(X1 %in% HQ_contigs | X2 %in% HQ_contigs)
+virsorter_checkv_jumbo <- virsorter_checkv %>% 
+  filter(checkv_quality == "Complete" | checkv_quality == "High-quality") %>% 
+  filter(length >= 200000)
 ```
 
-### Write files
-```{r, eval=FALSE}
-# write summary file
-write_tsv(virsorter_checkv, "data_combined_assembly/coa-virsorter_checkv.tsv") 
-write_tsv(virsorter_checkv_HQ, "data_combined_assembly/coa-virsorter_checkv_HQ.tsv") 
-write_tsv(virsorter_checkv_HQ_vcontact, "data_combined_assembly/coa-virsorter_checkv_HQ_vcontact.tsv") 
-write.table(vcontact_ntw_HQ, "data_combined_assembly/vcontact_ntw_HQ.ntw", sep = " ", col.names=F, row.names=F, quote=F)
-```
+### Data analysis
 
-## Data analysis
-
-### Barchart of checkv_quality
+#### Barchart of checkv_quality
 ```{r}
 virsorter_checkv %>% 
 ggplot(aes(x = checkv_quality)) + 
   geom_bar() 
 ```
 
-### Table with % checkv_quality in each category
+#### Table with % checkv_quality in each category
 ```{r}
 virsorter_checkv %>% 
   mutate(across(checkv_quality, as_factor)) %>% 
@@ -91,8 +77,8 @@ virsorter_checkv %>%
   mutate(freq = n / sum(n))
 ```
 
-### Histogram
-
+#### Histogram of all contigs
+Most low quality contigs are less than 20kb
 ```{r}
 virsorter_checkv %>% 
 ggplot(aes(x = length, fill = checkv_quality)) + 
@@ -102,7 +88,7 @@ ggplot(aes(x = length, fill = checkv_quality)) +
   theme(text = element_text(size = 20, color="black"))
   theme(axis.text.x = element_text(angle = 90)) 
 ```
-
+#### Histogram of HQ contigs
 ```{r}
 virsorter_checkv_HQ %>% 
 ggplot(aes(x = length, fill = checkv_quality)) + 
@@ -112,3 +98,89 @@ ggplot(aes(x = length, fill = checkv_quality)) +
   #theme(text = element_text(size = 20, color="black"))
   theme(axis.text.x = element_text(angle = 45)) 
 ```
+
+### Write files
+```{r, eval=FALSE}
+# write summary file
+write_tsv(virsorter_checkv, "data_combined_assembly/coa-virsorter_checkv.tsv") 
+write_tsv(virsorter_checkv_HQ, "data_combined_assembly/coa-virsorter_checkv_HQ.tsv") 
+write_tsv(virsorter_checkv_jumbo, "data_combined_assembly/coa-virsorter_checkv_jumbo.tsv") 
+```
+
+
+## vContact
+vContact groups contigs into clusters along with phages in NCBI's viurs reference database
+### data  processing
+#### join with vcontact results
+```{r}
+virsorter_checkv_HQ_vcontact <- left_join(virsorter_checkv_HQ, vcontact, by = c("contig_id" = "Genome"))
+virsorter_checkv_jumbo_vcontact <- left_join(virsorter_checkv_jumbo, vcontact, by = c("contig_id" = "Genome"))
+```
+
+#### filter network files to contain just HQ or jumbo phages
+```{r}
+# make a vector of HQ and jumbo contigs
+HQ_contigs <- pull(virsorter_checkv_HQ, contig_id)
+jumbo_contigs <- pull(virsorter_checkv_jumbo_vcontact, contig_id)  
+
+# create list of low quality genomes
+# There are genes in the vcontact network that are not in the merged virsorter/vcheck file
+# So first make a list of vcontact genomes with contig in name then filter HQ
+
+vcontact_contig_LQ <- vcontact %>% 
+filter(grepl('Contig', Genome)) %>% 
+filter(!Genome %in% HQ_contigs)
+
+# make a vector of low quality contigs 
+LQ_contigs <- pull(vcontact_contig_LQ, Genome)  
+
+# filter vcontact network based on HQ genomes}
+vcontact_ntw_HQ <- vcontact_ntw %>% 
+filter(X1 %in% HQ_contigs) %>% 
+filter(!X1 %in% LQ_contigs & !X2 %in% LQ_contigs)
+
+# filter vcontact network based on jumbo genomes
+vcontact_ntw_jumbo <- vcontact_ntw %>% 
+filter(X1 %in% jumbo_contigs) %>% 
+filter(!X1 %in% LQ_contigs & !X2 %in% LQ_contigs)
+
+# filter vcontact network based on jumbo genomes and interaction score <30
+vcontact_ntw_jumbo30 <- vcontact_ntw_jumbo %>% 
+  filter(X3 > 30)
+```
+
+
+#### Histogram of interaction score
+```{r}
+vcontact_ntw_jumbo %>% 
+ggplot(aes(x = X3)) + 
+  geom_histogram(colour = "black",  binwidth=10) +
+  xlab("Score") + 
+  #theme(text = element_text(size = 20, color="black"))
+  theme(axis.text.x = element_text(angle = 45)) 
+```
+
+### Write files
+```{r, eval=FALSE}
+write_tsv(virsorter_checkv_HQ_vcontact, "data_combined_assembly/coa-virsorter_checkv_HQ_vcontact.tsv") 
+write_tsv(virsorter_checkv_jumbo_vcontact,"data_combined_assembly/coa-virsorter_checkv_jumbo_vcontact.tsv") 
+write.table(vcontact_ntw_HQ, "data_combined_assembly/vcontact_ntw_HQ.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+write.table(vcontact_ntw_jumbo, "data_combined_assembly/vcontact_ntw_jumbo.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+write.table(vcontact_ntw_jumbo30, "data_combined_assembly/vcontact_ntw_jumbo30.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+```
+
+## Cytoscape
+To load network
+File>Import>Network from file
+Open
+Advanced options
+Select delimiter =  space
+deselect use first column as names
+select col 1 as source
+select col 2 as target
+select col 3 as edge
+
+To select a group of nodes
+shift then mouse drag
+
+
