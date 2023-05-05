@@ -10,10 +10,11 @@ output:
     highlight: tango
 ---
 
-# This report is an analysis of the Barre Woods filter metagenomes from the combined assembly  Assembly, binning, quality control and classification was done on KBase
+# Overview
+
+This report is an analysis of the Barre Woods filter metagenomes from the combined assembly  Assembly, binning, quality control and classification was done on KBase
 (https://narrative.kbase.us/narrative/145971. The checkv and virsorter files were downloaded to this project folder.
 
-## Load Libraries
 
 ```{r}
 # Load libraries
@@ -32,10 +33,6 @@ virsorter <- read_tsv("data_combined_assembly/virsorter-final-viral-score.tsv") 
   rename("contig_id" = "seqname")
 
 checkv <- read_tsv("data_combined_assembly/checkv_quality_summary.tsv") 
-
-vcontact <- read_csv("data_combined_assembly/vcontact_genome_by_genome_overview.csv") 
-
-vcontact_ntw <- read_table("data_combined_assembly/coa-vcontact_c1.ntw", col_names = FALSE) 
 ```
 
 #### Join checkv and virsorter dataframes
@@ -57,6 +54,14 @@ virsorter_checkv_HQ <- virsorter_checkv %>%
 virsorter_checkv_jumbo <- virsorter_checkv %>% 
   filter(checkv_quality == "Complete" | checkv_quality == "High-quality") %>% 
   filter(length >= 200000)
+```
+
+#### Write files
+```{r, eval=FALSE}
+# write summary file
+write_tsv(virsorter_checkv, "data_combined_assembly/coa-virsorter_checkv.tsv") 
+write_tsv(virsorter_checkv_HQ, "data_combined_assembly/coa-virsorter_checkv_HQ.tsv") 
+write_tsv(virsorter_checkv_jumbo, "data_combined_assembly/coa-virsorter_checkv_jumbo.tsv") 
 ```
 
 ### Data analysis
@@ -99,25 +104,23 @@ ggplot(aes(x = length, fill = checkv_quality)) +
   theme(axis.text.x = element_text(angle = 45)) 
 ```
 
-### Write files
-```{r, eval=FALSE}
-# write summary file
-write_tsv(virsorter_checkv, "data_combined_assembly/coa-virsorter_checkv.tsv") 
-write_tsv(virsorter_checkv_HQ, "data_combined_assembly/coa-virsorter_checkv_HQ.tsv") 
-write_tsv(virsorter_checkv_jumbo, "data_combined_assembly/coa-virsorter_checkv_jumbo.tsv") 
-```
-
-
 ## vContact
 vContact groups contigs into clusters along with phages in NCBI's viurs reference database
 ### data  processing
-#### join with vcontact results
+
+#### read in files
+```{r}
+vcontact <- read_csv("data_combined_assembly/vcontact_genome_by_genome_overview.csv") 
+vcontact_ntw <- read_table("data_combined_assembly/coa-vcontact_c1.ntw", col_names = FALSE) 
+```
+
+#### join with virsorter and checkv results
 ```{r}
 virsorter_checkv_HQ_vcontact <- left_join(virsorter_checkv_HQ, vcontact, by = c("contig_id" = "Genome"))
 virsorter_checkv_jumbo_vcontact <- left_join(virsorter_checkv_jumbo, vcontact, by = c("contig_id" = "Genome"))
 ```
 
-#### filter network files to contain just HQ or jumbo phages
+#### filter network files to contain just HQ or jumbo phages for cytoscape
 ```{r}
 # make a vector of HQ and jumbo contigs
 HQ_contigs <- pull(virsorter_checkv_HQ, contig_id)
@@ -149,7 +152,16 @@ vcontact_ntw_jumbo30 <- vcontact_ntw_jumbo %>%
   filter(X3 > 30)
 ```
 
+#### Write files
+```{r, eval=FALSE}
+write_tsv(virsorter_checkv_HQ_vcontact, "data_combined_assembly/coa-virsorter_checkv_HQ_vcontact.tsv") 
+write_tsv(virsorter_checkv_jumbo_vcontact,"data_combined_assembly/coa-virsorter_checkv_jumbo_vcontact.tsv") 
+write.table(vcontact_ntw_HQ, "data_combined_assembly/vcontact_ntw_HQ.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+write.table(vcontact_ntw_jumbo, "data_combined_assembly/vcontact_ntw_jumbo.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+write.table(vcontact_ntw_jumbo30, "data_combined_assembly/vcontact_ntw_jumbo30.ntw", sep = " ", col.names=F, row.names=F, quote=F)
+```
 
+### Data Analysis
 #### Histogram of interaction score
 ```{r}
 vcontact_ntw_jumbo %>% 
@@ -160,18 +172,11 @@ ggplot(aes(x = X3)) +
   theme(axis.text.x = element_text(angle = 45)) 
 ```
 
-### Write files
-```{r, eval=FALSE}
-write_tsv(virsorter_checkv_HQ_vcontact, "data_combined_assembly/coa-virsorter_checkv_HQ_vcontact.tsv") 
-write_tsv(virsorter_checkv_jumbo_vcontact,"data_combined_assembly/coa-virsorter_checkv_jumbo_vcontact.tsv") 
-write.table(vcontact_ntw_HQ, "data_combined_assembly/vcontact_ntw_HQ.ntw", sep = " ", col.names=F, row.names=F, quote=F)
-write.table(vcontact_ntw_jumbo, "data_combined_assembly/vcontact_ntw_jumbo.ntw", sep = " ", col.names=F, row.names=F, quote=F)
-write.table(vcontact_ntw_jumbo30, "data_combined_assembly/vcontact_ntw_jumbo30.ntw", sep = " ", col.names=F, row.names=F, quote=F)
-```
 
 ## Cytoscape
-To load network
-File>Import>Network from file
+### Notes
+#### To load network
+File > Import> Network from file
 Open
 Advanced options
 Select delimiter =  space
@@ -180,7 +185,66 @@ select col 1 as source
 select col 2 as target
 select col 3 as edge
 
-To select a group of nodes
+#### To select a group of nodes
 shift then mouse drag
 
+### Data Analysis
+#### Jumbo30 network
 
+![jumbo30](data_combined_assembly/jumbo30_cytoscape_ntw.png)
+
+## DRAMv
+
+### Data processing
+
+#### Read files AMG summary and stats files
+
+```{r}
+DRAMv_amg <- read_tsv("data_combined_assembly/DRAMv_amg_summary.tsv") 
+DRAMv_stats <- read_tsv("data_combined_assembly/DRAMv_vMAG_stats.tsv") %>% 
+  rename("contig_id" = "...1")
+```
+
+#### join with stats virsorter and checkv results
+```{r}
+DRAMv_stats_virsorter_checkv_HQ <- left_join(virsorter_checkv_HQ, DRAMv_stats, by = "contig_id")
+DRAMv_stats_virsorter_checkv_jumbo <- left_join(virsorter_checkv_jumbo, DRAMv_stats, by = "contig_id")
+```
+
+#### filter amd files to HQ and jumbo
+```{r}
+DRAMv_amg_HQ <- DRAMv_amg %>% 
+filter(scaffold %in% HQ_contigs)
+
+DRAMv_amg_jumbo <- DRAMv_amg %>% 
+filter(scaffold %in% jumbo_contigs)
+```
+
+#### Write files
+
+```{r}
+write_tsv(DRAMv_stats_virsorter_checkv_HQ, "data_combined_assembly/coa-DRAMv_stats_virsorter_checkv_HQ .tsv") 
+write_tsv(DRAMv_stats_virsorter_checkv_jumbo,"data_combined_assembly/coa-DRAMv_stats_virsorter_checkv_jumbo.tsv") 
+write_tsv(DRAMv_amg_HQ, "data_combined_assembly/coa-DRAMv_amg_HQQ .tsv") 
+write_tsv(DRAMv_amg_jumbo,"data_combined_assembly/coa-DRAMv_amg_jumbo.tsv") 
+```
+
+### Data Analysis
+
+#### Graph of genes vs amgs in HQ
+
+```{r}
+DRAMv_stats_virsorter_checkv_HQ %>% 
+ggplot(aes(x = `Gene count`, y = `potential AMG count`)) + 
+  geom_point() 
+```
+
+
+#### Graph of genes vs amgs in HQ no provirus
+
+```{r}
+DRAMv_stats_virsorter_checkv_HQ %>% 
+  filter(provirus == "No") %>% 
+ggplot(aes(x = `Gene count`, y = `potential AMG count`)) + 
+  geom_point() 
+```
