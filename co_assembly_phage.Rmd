@@ -248,3 +248,33 @@ DRAMv_stats_virsorter_checkv_HQ %>%
 ggplot(aes(x = `Gene count`, y = `potential AMG count`)) + 
   geom_point() 
 ```
+
+
+#### Graph of genes vs iral genes with host benefits in HQ no provirus
+
+```{r}
+DRAMv_stats_virsorter_checkv_HQ %>% 
+  filter(provirus == "No") %>% 
+ggplot(aes(x = `Gene count`, y = `Viral genes with host benefits`)) + 
+  geom_point() 
+```
+
+#### Genome length vs gene count
+
+```{r}
+DRAMv_stats_virsorter_checkv_HQ %>% 
+    filter(provirus == "No") %>% 
+ggplot(aes(x = `length`, y = `Gene count`)) + 
+  geom_point()
+```
+
+#### HQ contigs with transposes
+
+```{r}
+DRAMv_stats_virsorter_checkv_HQ %>% 
+    filter(provirus == "No") %>% 
+ggplot(aes(x = `length`, y = `Gene count`)) + 
+  geom_point(aes(colour = `Transposase present`))
+```
+
+
