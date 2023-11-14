@@ -1,0 +1,504 @@
+bin	BinContigLenSum	BinContigCount	hallmarkSum	totalAvgDepthMean	gcMean	seqname	max_contigLen	max_score	max_contigLenGroup	full-partial_x	bin_high_group	bin_high_ContigLenSum	GroupPercent
+bin.001	284957	5	2	24	47	Contig156336242	109809	0.9	NCLDV	|full	NCLDV	251539.0	88.0
+bin.002	799708	7	0	18	56	Contig147240567	324943		NoVirusDetected		NoVirusDetected	799708.0	100.0
+bin.003	815219	6	0	34	52	Contig150201542	256236		NoVirusDetected		NoVirusDetected	815219.0	100.0
+bin.004	260912	1	11	102	51	Contig123250987	260912	1.0	dsDNAphage	|full	dsDNAphage	260912.0	100.0
+bin.005	494834	1	8	36	42	Contig139899753	494834	0.953	dsDNAphage	|full	dsDNAphage	494834.0	100.0
+bin.006	324030	3	12	13	38	Contig109876813	194087	1.0	dsDNAphage	|full	dsDNAphage	281780.0	86.0
+bin.007	338143	2	0	24	56	Contig108979375	197423		NoVirusDetected		NoVirusDetected	338143.0	100.0
+bin.008	1024416	17	0	17	45	Contig140788380	184959		NoVirusDetected		NoVirusDetected	1024416.0	100.0
+bin.009	359506	4	25	49	34	Contig100641146	236587	0.993	dsDNAphage	|full	dsDNAphage	359506.0	100.0
+bin.010	346597	1	23	12	46	Contig99511885	346597	1.0	dsDNAphage	|full	dsDNAphage	346597.0	100.0
+bin.011	68084	4	3	16	63	Contig125248305	35014	0.987	dsDNAphage	|full	dsDNAphage	35014.0	51.0
+bin.012	857475	17	0	54	54	Contig48877406	171594		NoVirusDetected		NoVirusDetected	814560.0	94.0
+bin.013	225980	12	0	8	58	Contig89410386	52655		NoVirusDetected		NoVirusDetected	225980.0	100.0
+bin.014	1282645	93	23	18	61	Contig102604416	43814	1.0	dsDNAphage	|full	NoVirusDetected	1152165.0	89.0
+bin.015	887846	47	0	8	44	Contig83506907	48705		NoVirusDetected		NoVirusDetected	887846.0	100.0
+bin.016	3138124	163	0	10	68	Contig96005782	84202		NoVirusDetected		NoVirusDetected	3138124.0	100.0
+bin.017	3086252	144	1	10	63	Contig102552966	78141		NoVirusDetected		NoVirusDetected	3049317.0	98.0
+bin.018	143810	9	0	7	38	Contig108584155	21277		NoVirusDetected		NoVirusDetected	125243.0	87.0
+bin.019	393704	28	0	6	38	Contig108743498	37685		NoVirusDetected		NoVirusDetected	346277.0	87.0
+bin.020	172470	14	0	6	48	Contig64486978	15327		NoVirusDetected		NoVirusDetected	172470.0	100.0
+bin.021	5786381	52	17	45	64	Contig125986687	357026		NoVirusDetected		NoVirusDetected	5509987.0	95.0
+bin.022	308315	1	40	113	53	Contig39015512	308315	0.993	dsDNAphage	|full	dsDNAphage	308315.0	100.0
+bin.023	845825	4	1	64	48	Contig128242616	324422		NoVirusDetected		NoVirusDetected	647140.0	76.0
+bin.024	10217	1	0	5	66	Contig150868766	10217		NoVirusDetected		NoVirusDetected	10217.0	100.0
+bin.025	119611	8	0	9	57	Contig31610193	31646		NoVirusDetected		NoVirusDetected	119611.0	100.0
+bin.026	268336	18	0	6	36	Contig108672663	23470		NoVirusDetected		NoVirusDetected	268336.0	100.0
+bin.027	404760	31	0	7	66	Contig135119658	19147		NoVirusDetected		NoVirusDetected	380805.0	94.0
+bin.028	509955	38	0	8	55	Contig154551577	20369		NoVirusDetected		NoVirusDetected	498629.0	97.0
+bin.029	950874	11	0	39	54	Contig113632679	262294		NoVirusDetected		NoVirusDetected	950874.0	100.0
+bin.030	555204	41	0	15	58	Contig35158194	27718		NoVirusDetected		NoVirusDetected	555204.0	100.0
+bin.031	202251	3	3	12	61	Contig35108570	177188	0.993	dsDNAphage	|full	dsDNAphage	188195.0	93.0
+bin.032	858405	5	0	24	37	Contig33797786	464809		NoVirusDetected		NoVirusDetected	858405.0	100.0
+bin.033	2452890	105	0	116	60	Contig142220874	133350		NoVirusDetected		NoVirusDetected	2452890.0	100.0
+bin.034	370853	29	0	7	58	Contig135614153	20313		NoVirusDetected		NoVirusDetected	370853.0	100.0
+bin.035	34543	3	0	6	62	Contig102682066	13321		NoVirusDetected		NoVirusDetected	34543.0	100.0
+bin.036	246007	4	7	24	59	Contig153932647	134587	0.98	dsDNAphage	|full	dsDNAphage	246007.0	100.0
+bin.037	33067	3	1	12	58	Contig111868958	11205		NoVirusDetected		NoVirusDetected	21977.0	66.0
+bin.038	20778	2	0	10	66	Contig16019885	10454		NoVirusDetected		NoVirusDetected	20778.0	100.0
+bin.039	795392	25	1	19	34	Contig85053444	151911		NoVirusDetected		NoVirusDetected	733291.0	92.0
+bin.040	419992	33	0	16	60	Contig16969508	19128		NoVirusDetected		NoVirusDetected	419992.0	100.0
+bin.041	149481	12	4	7	60	Contig84848002	16871	0.96	dsDNAphage	|full	dsDNAphage	74147.0	49.0
+bin.042	4996992	106	2	16	60	Contig148374054	211384		NoVirusDetected		NoVirusDetected	4920962.0	98.0
+bin.043	314982	15	6	107	61	Contig7325595	44011		NoVirusDetected		dsDNAphage	240956.0	76.0
+bin.044	180119	15	0	6	63	Contig55907276	14125		NoVirusDetected		NoVirusDetected	146492.0	81.0
+bin.045	1106953	23	1	11	53	Contig139213570	112644	0.873	dsDNAphage	|0_partial	NoVirusDetected	994309.0	89.0
+bin.046	8193478	106	3	31	57	Contig149102555	365912		NoVirusDetected		NoVirusDetected	8106462.0	98.0
+bin.047	4902042	82	1	17	57	Contig70774550	154742		NoVirusDetected		NoVirusDetected	4884311.0	99.0
+bin.048	1010733	4	0	21	51	Contig28617738	332300		NoVirusDetected		NoVirusDetected	1010733.0	100.0
+bin.049	320562	25	0	6	66	Contig137482736	26513		NoVirusDetected		NoVirusDetected	320562.0	100.0
+bin.050	760372	15	2	13	49	Contig152478965	165311		NoVirusDetected		NoVirusDetected	712394.0	93.0
+bin.051	837832	55	11	8	60	Contig16633890	66412	0.987	dsDNAphage	|full	NoVirusDetected	734804.0	87.0
+bin.052	2759121	184	9	9	63	Contig58227315	43586	0.94	dsDNAphage	|0_partial	NoVirusDetected	2671763.0	96.0
+bin.053	231542	19	0	8	59	Contig52124894	17105		NoVirusDetected		NoVirusDetected	231542.0	100.0
+bin.054	551857	3	18	12	29	Contig26800275	379468	0.967	dsDNAphage	|full	dsDNAphage	551857.0	100.0
+bin.055	1402301	98	0	9	60	Contig131880051	28275		NoVirusDetected		NoVirusDetected	1402301.0	100.0
+bin.056	386503	14	6	34	57	Contig137760289	92049	1.0	dsDNAphage	|full	NoVirusDetected	234464.0	60.0
+bin.057	663150	51	0	6	57	Contig144388458	24973		NoVirusDetected		NoVirusDetected	643852.0	97.0
+bin.058	129623	4	0	20	55	Contig138210631	76804		NoVirusDetected		NoVirusDetected	129623.0	100.0
+bin.059	490575	19	17	34	57	Contig112531407	60663	0.873	dsDNAphage	|0_partial	dsDNAphage	296035.0	60.0
+bin.060	223758	2	10	20	56	Contig90455972	208160	1.0	dsDNAphage	|full	dsDNAphage	208160.0	93.0
+bin.061	149926	6	0	19	56	Contig140704920	39694		NoVirusDetected		NoVirusDetected	149926.0	100.0
+bin.062	263593	2	1	15	37	Contig24240559	175117	0.613	NCLDV	|full	NCLDV	263593.0	100.0
+bin.063	1480828	29	2	14	50	Contig126846074	168226		NoVirusDetected		NoVirusDetected	695047.0	46.0
+bin.064	944814	6	3	22	51	Contig31533497	259615	0.833	dsDNAphage	|0_partial	NoVirusDetected	563857.0	59.0
+bin.065	41044	3	1	6	37	Contig140512563	18398		NoVirusDetected		NoVirusDetected	18398.0	44.0
+bin.066	251160	20	0	15	62	Contig126142683	15184		NoVirusDetected		NoVirusDetected	251160.0	100.0
+bin.067	308541	1	9	194	54	Contig63567846	308541	1.0	dsDNAphage	|full	dsDNAphage	308541.0	100.0
+bin.068	315014	17	0	8	45	Contig116969508	40737		NoVirusDetected		NoVirusDetected	229544.0	72.0
+bin.069	661662	51	0	9	57	Contig137213759	20445		NoVirusDetected		NoVirusDetected	661662.0	100.0
+bin.070	1113774	20	2	17	55	Contig30301772	117566		NoVirusDetected		NoVirusDetected	1046140.0	93.0
+bin.071	807025	23	1	12	51	Contig110532894	99338	0.913	NCLDV	|0_partial	NoVirusDetected	671156.0	83.0
+bin.072	21077	2	0	6	62	Contig89884200	10961		NoVirusDetected		NoVirusDetected	21077.0	100.0
+bin.073	1009542	42	1	8	45	Contig19949985	81017	0.907	dsDNAphage	|0_partial	NoVirusDetected	928525.0	91.0
+bin.074	320732	25	0	6	59	Contig88358214	22959		NoVirusDetected		NoVirusDetected	309582.0	96.0
+bin.075	104390	8	0	7	39	Contig131995812	15403		NoVirusDetected		NoVirusDetected	92971.0	89.0
+bin.076	330302	10	0	78	35	Contig63810110	76328		NoVirusDetected		NoVirusDetected	330302.0	100.0
+bin.077	604523	41	0	11	65	Contig142446182	41113		NoVirusDetected		NoVirusDetected	604523.0	100.0
+bin.078	341322	24	1	6	50	Contig139464879	21683		NoVirusDetected		NoVirusDetected	298653.0	87.0
+bin.079	467482	31	0	11	59	Contig152305116	49994		NoVirusDetected		NoVirusDetected	456657.0	97.0
+bin.080	202982	3	2	26	35	Contig118345716	160253	1.0	dsDNAphage	|full	dsDNAphage	202982.0	100.0
+bin.081	2293813	17	0	24	54	Contig154892600	363244		NoVirusDetected		NoVirusDetected	2293813.0	100.0
+bin.082	821228	5	0	18	53	Contig41889697	273399		NoVirusDetected		NoVirusDetected	821228.0	100.0
+bin.083	437781	1	10	20	39	Contig133367609	437781	0.98	dsDNAphage	|full	dsDNAphage	437781.0	100.0
+bin.084	35404	3	0	12	61	Contig88831831	12026		NoVirusDetected		NoVirusDetected	35404.0	100.0
+bin.085	55487	5	0	34	34	Contig104369662	12357		NoVirusDetected		NoVirusDetected	45423.0	81.0
+bin.086	20448	2	0	6	40	Contig115322674	10385		NoVirusDetected		NoVirusDetected	20448.0	100.0
+bin.087	476977	23	0	10	51	Contig154344923	52311	0.64	NCLDV	|full	NoVirusDetected	387645.0	81.0
+bin.088	112899	9	0	7	61	Contig39316462	21198		NoVirusDetected		NoVirusDetected	112899.0	100.0
+bin.089	109975	9	0	41	61	Contig32415973	15566		NoVirusDetected		NoVirusDetected	109975.0	100.0
+bin.090	1387814	92	23	15	65	Contig14903753	109221	0.993	dsDNAphage	|full	NoVirusDetected	1206684.0	86.0
+bin.091	1172286	67	1	17	60	Contig60169465	72565		NoVirusDetected		NoVirusDetected	1128817.0	96.0
+bin.092	699826	26	2	12	49	Contig93769594	69811		NoVirusDetected		NoVirusDetected	569625.0	81.0
+bin.093	1932914	124	3	10	68	Contig123700814	40902	0.887	dsDNAphage	|0_partial	NoVirusDetected	1853992.0	95.0
+bin.094	1378759	96	0	27	62	Contig71258123	64681	0.573	dsDNAphage	|full	NoVirusDetected	1284857.0	93.0
+bin.095	543304	36	1	10	59	Contig107078740	34163		NoVirusDetected		NoVirusDetected	526397.0	96.0
+bin.096	1249871	90	0	9	61	Contig46271675	33221		NoVirusDetected		NoVirusDetected	1249871.0	100.0
+bin.097	250937	20	0	59	61	Contig42923767	23669		NoVirusDetected		NoVirusDetected	250937.0	100.0
+bin.098	267855	22	0	10	65	Contig99581937	17704		NoVirusDetected		NoVirusDetected	267855.0	100.0
+bin.099	758247	47	3	10	62	Contig119132861	45116		NoVirusDetected		NoVirusDetected	704917.0	92.0
+bin.100	2740722	113	0	25	59	Contig125127972	95759		NoVirusDetected		NoVirusDetected	2720976.0	99.0
+bin.101	4043595	64	2	17	52	Contig120542725	263881		NoVirusDetected		NoVirusDetected	4003309.0	99.0
+bin.102	354207	27	0	16	63	Contig79676239	21217		NoVirusDetected		NoVirusDetected	354207.0	100.0
+bin.103	2166849	121	0	9	59	Contig100670524	44225		NoVirusDetected		NoVirusDetected	2166849.0	100.0
+bin.104	2640988	147	3	8	41	Contig146914406	51925		NoVirusDetected		NoVirusDetected	2550588.0	96.0
+bin.105	5116296	55	0	26	57	Contig22965852	383508		NoVirusDetected		NoVirusDetected	5116296.0	100.0
+bin.106	338953	25	0	6	43	Contig41558284	29539		NoVirusDetected		NoVirusDetected	338953.0	100.0
+bin.107	1910404	65	3	31	36	Contig117678075	88302		NoVirusDetected		NoVirusDetected	1735676.0	90.0
+bin.108	276703	21	2	7	44	Contig109941804	30065	0.94	NCLDV	|full	NoVirusDetected	115919.0	41.0
+bin.109	86622	6	0	6	52	Contig62756801	19100		NoVirusDetected		NoVirusDetected	86622.0	100.0
+bin.110	43327	4	0	25	60	Contig51991249	11510		NoVirusDetected		NoVirusDetected	43327.0	100.0
+bin.111	39333	3	0	7	61	Contig124575660	16107		NoVirusDetected		NoVirusDetected	39333.0	100.0
+bin.112	2082496	6	7	23	59	Contig150164527	779072		NoVirusDetected		NoVirusDetected	1702677.0	81.0
+bin.113	221106	2	3	14	51	Contig3478317	120819	0.987	dsDNAphage	|full	dsDNAphage	221106.0	100.0
+bin.114	5601254	268	5	12	56	Contig126696141	85564		NoVirusDetected		NoVirusDetected	5469240.0	97.0
+bin.115	97753	8	1	6	64	Contig110054031	15821		NoVirusDetected		NoVirusDetected	85269.0	87.0
+bin.116	82539	7	0	6	38	Contig9011889	14071		NoVirusDetected		NoVirusDetected	57185.0	69.0
+bin.117	172499	8	12	9	39	Contig54742492	39379	1.0	dsDNAphage	|full	NoVirusDetected	102369.0	59.0
+bin.118	1013822	82	1	6	64	Contig65479323	20803		NoVirusDetected		NoVirusDetected	1002751.0	98.0
+bin.119	154081	10	0	7	58	Contig6652509	22781		NoVirusDetected		NoVirusDetected	154081.0	100.0
+bin.120	2504606	132	3	8	38	Contig141757850	86912		NoVirusDetected		NoVirusDetected	2363507.0	94.0
+bin.121	60422	5	0	59	58	Contig74429403	15108		NoVirusDetected		NoVirusDetected	60422.0	100.0
+bin.122	154779	12	3	9	62	Contig736338	18040	0.96	dsDNAphage	|full	NoVirusDetected	125061.0	80.0
+bin.123	170137	9	0	8	47	Contig130052283	32858		NoVirusDetected		NoVirusDetected	170137.0	100.0
+bin.124	3943463	206	0	9	58	Contig51902034	58891		NoVirusDetected		NoVirusDetected	3943463.0	100.0
+bin.125	251543	19	0	10	61	Contig6534575	21049		NoVirusDetected		NoVirusDetected	251543.0	100.0
+bin.126	3342755	87	2	13	46	Contig80585830	146448		NoVirusDetected		NoVirusDetected	3161964.0	94.0
+bin.127	934689	64	0	55	65	Contig105559513	30469		NoVirusDetected		NoVirusDetected	934689.0	100.0
+bin.128	430011	35	0	6	69	Contig102054371	17000		NoVirusDetected		NoVirusDetected	430011.0	100.0
+bin.129	256399	1	2	1157	50	Contig81974069	256399	1.0	dsDNAphage	|full	dsDNAphage	256399.0	100.0
+bin.130	4150781	75	7	64	39	Contig76497937	222683		NoVirusDetected		NoVirusDetected	4052548.0	97.0
+bin.131	406024	16	0	9	50	Contig128102617	49946		NoVirusDetected		NoVirusDetected	394922.0	97.0
+bin.132	463542	35	0	8	62	Contig155514053	24549		NoVirusDetected		NoVirusDetected	463542.0	100.0
+bin.133	191412	5	0	28	61	Contig82215902	76906		NoVirusDetected		NoVirusDetected	191412.0	100.0
+bin.134	1071846	82	3	8	65	Contig129243183	25855		NoVirusDetected		NoVirusDetected	1027932.0	95.0
+bin.135	1674836	52	0	10	35	Contig43421991	136914		NoVirusDetected		NoVirusDetected	1553782.0	92.0
+bin.136	452871	25	0	9	50	Contig149361760	30309	0.72	NCLDV	|full	NoVirusDetected	402297.0	88.0
+bin.137	403561	30	0	8	46	Contig117648937	24176		NoVirusDetected		NoVirusDetected	403561.0	100.0
+bin.138	462114	32	0	7	43	Contig133804949	24995		NoVirusDetected		NoVirusDetected	462114.0	100.0
+bin.139	952805	66	4	46	63	Contig59592305	71844	0.993	dsDNAphage	|full	NoVirusDetected	880961.0	92.0
+bin.140	760443	53	0	13	66	Contig146649797	38801		NoVirusDetected		NoVirusDetected	748133.0	98.0
+bin.141	1081855	86	4	7	65	Contig104675420	27234		NoVirusDetected		NoVirusDetected	1038313.0	95.0
+bin.142	1554929	34	4	29	36	Contig118602007	448368		NoVirusDetected		NoVirusDetected	1483712.0	95.0
+bin.143	234697	19	2	6	60	Contig136700237	16643		NoVirusDetected		NoVirusDetected	209828.0	89.0
+bin.144	539917	22	1	8	46	Contig125788563	79143		NoVirusDetected		NoVirusDetected	510335.0	94.0
+bin.145	117275	10	0	7	63	Contig128006381	14046		NoVirusDetected		NoVirusDetected	117275.0	100.0
+bin.146	49542	4	0	6	32	Contig10684605	14908	0.947	NCLDV	|full	NoVirusDetected	34634.0	69.0
+bin.147	2635552	41	0	16	54	Contig126461900	171839		NoVirusDetected		NoVirusDetected	2635552.0	100.0
+bin.148	217922	10	0	10	61	Contig41646524	39258	0.847	NCLDV	|full	NCLDV	141826.0	65.0
+bin.149	49898	4	0	16	58	Contig121880407	13450		NoVirusDetected		NoVirusDetected	49898.0	100.0
+bin.150	2351819	150	3	22	55	Contig147283963	63350		NoVirusDetected		NoVirusDetected	2261409.0	96.0
+bin.151	219542	13	10	11	48	Contig150146140	36547	0.993	dsDNAphage	|full	NoVirusDetected	182995.0	83.0
+bin.152	48917	4	0	10	60	Contig70814199	14010		NoVirusDetected		NoVirusDetected	48917.0	100.0
+bin.153	124260	7	6	6	60	Contig139464878	58675	0.987	dsDNAphage	|full	NoVirusDetected	65585.0	52.0
+bin.154	180439	15	0	8	61	Contig153137374	13734		NoVirusDetected		NoVirusDetected	180439.0	100.0
+bin.155	601775	38	0	17	65	Contig48465859	32651		NoVirusDetected		NoVirusDetected	601775.0	100.0
+bin.156	5812457	116	9	12	41	Contig85715921	311644		NoVirusDetected		NoVirusDetected	5338057.0	91.0
+bin.157	2322779	152	0	8	58	Contig121354569	49906		NoVirusDetected		NoVirusDetected	2300913.0	99.0
+bin.158	338651	28	0	405	62	Contig31872978	17237		NoVirusDetected		NoVirusDetected	338651.0	100.0
+bin.159	2035395	117	0	22	63	Contig57576685	65705		NoVirusDetected		NoVirusDetected	2035395.0	100.0
+bin.160	66584	5	0	6	47	Contig7775743	16289		NoVirusDetected		NoVirusDetected	66584.0	100.0
+bin.161	77937	6	0	8	56	Contig104604868	17745		NoVirusDetected		NoVirusDetected	77937.0	100.0
+bin.162	316536	25	0	10	58	Contig119795418	20547		NoVirusDetected		NoVirusDetected	316536.0	100.0
+bin.163	832577	58	1	7	58	Contig153286606	31090		NoVirusDetected		NoVirusDetected	820213.0	98.0
+bin.164	5710649	65	3	22	60	Contig154251580	390255		NoVirusDetected		NoVirusDetected	5521283.0	96.0
+bin.165	3092834	65	2	19	58	Contig154948781	134809		NoVirusDetected		NoVirusDetected	2960399.0	95.0
+bin.166	317688	9	26	11	36	Contig118935906	82042	1.0	dsDNAphage	|full	dsDNAphage	317688.0	100.0
+bin.167	2843650	154	9	18	64	Contig16082042	66793	0.993	dsDNAphage	|full	NoVirusDetected	2776857.0	97.0
+bin.168	16258344	786	3	12	61	Contig150146015	148802		NoVirusDetected		NoVirusDetected	16187908.0	99.0
+bin.169	1537032	63	0	9	41	Contig81176208	68134		NoVirusDetected		NoVirusDetected	1537032.0	100.0
+bin.170	245295	12	0	10	57	Contig73346646	33142		NoVirusDetected		NoVirusDetected	234974.0	95.0
+bin.171	277331	22	0	8	64	Contig79778773	19528		NoVirusDetected		NoVirusDetected	277331.0	100.0
+bin.172	117648	7	4	6	56	Contig128000801	39747	1.0	dsDNAphage	|full	NoVirusDetected	61256.0	52.0
+bin.173	3118089	183	0	54	61	Contig98578326	106596		NoVirusDetected		NoVirusDetected	3118089.0	100.0
+bin.174	1218867	63	11	12	57	Contig105356834	62625	0.993	dsDNAphage	|full	NoVirusDetected	1098690.0	90.0
+bin.175	4631163	193	1	11	58	Contig104399085	107525		NoVirusDetected		NoVirusDetected	4577898.0	98.0
+bin.176	4006556	110	0	11	58	Contig71377490	147320		NoVirusDetected		NoVirusDetected	4006556.0	100.0
+bin.177	289579	16	0	12	56	Contig102042051	40742		NoVirusDetected		NoVirusDetected	278301.0	96.0
+bin.178	108487	9	0	21	39	Contig48248648	14566		NoVirusDetected		NoVirusDetected	108487.0	100.0
+bin.179	10962	1	0	6	56	Contig132638860	10962		NoVirusDetected		NoVirusDetected	10962.0	100.0
+bin.180	1784739	113	5	32	62	Contig56870352	53349		NoVirusDetected		NoVirusDetected	1726730.0	96.0
+bin.181	2699599	135	19	50	34	Contig132960803	73084		NoVirusDetected		NoVirusDetected	2581632.0	95.0
+bin.182	327694	25	0	10	64	Contig83869083	26380		NoVirusDetected		NoVirusDetected	327694.0	100.0
+bin.183	868791	42	1	10	51	Contig91758525	82348		NoVirusDetected		NoVirusDetected	805378.0	92.0
+bin.184	522986	34	0	20	59	Contig126395199	32574		NoVirusDetected		NoVirusDetected	511394.0	97.0
+bin.185	2270054	137	0	13	55	Contig29316780	51562		NoVirusDetected		NoVirusDetected	2222733.0	97.0
+bin.186	150121	12	0	7	59	Contig25670209	18444		NoVirusDetected		NoVirusDetected	150121.0	100.0
+bin.187	5517391	35	25	26	53	Contig124139447	642310		NoVirusDetected		NoVirusDetected	4624861.0	83.0
+bin.188	1099660	82	1	18	58	Contig14390624	30615		NoVirusDetected		NoVirusDetected	1069485.0	97.0
+bin.189	4711980	213	7	13	59	Contig120847258	100652		NoVirusDetected		NoVirusDetected	4600749.0	97.0
+bin.190	529100	29	25	12	56	Contig124204300	47874		NoVirusDetected		dsDNAphage	320152.0	60.0
+bin.191	921848	69	1	9	64	Contig155066761	39156		NoVirusDetected		NoVirusDetected	911723.0	98.0
+bin.192	207812	17	0	11	58	Contig143484290	20197		NoVirusDetected		NoVirusDetected	207812.0	100.0
+bin.193	5388281	361	0	11	69	Contig44529058	48251		NoVirusDetected		NoVirusDetected	5375916.0	99.0
+bin.194	699805	53	1	8	60	Contig59286743	24685		NoVirusDetected		NoVirusDetected	686797.0	98.0
+bin.195	201612	15	0	15	67	Contig144209977	16473		NoVirusDetected		NoVirusDetected	201612.0	100.0
+bin.196	5362264	256	17	9	61	Contig139569038	73885		NoVirusDetected		NoVirusDetected	5178197.0	96.0
+bin.197	35573	3	0	6	56	Contig86495141	13026		NoVirusDetected		NoVirusDetected	35573.0	100.0
+bin.198	218414	18	0	9	65	Contig11000362	15044		NoVirusDetected		NoVirusDetected	218414.0	100.0
+bin.199	110260	7	0	9	57	Contig474642	24487		NoVirusDetected		NoVirusDetected	110260.0	100.0
+bin.200	756036	54	0	9	64	Contig132833408	23600		NoVirusDetected		NoVirusDetected	741854.0	98.0
+bin.201	52840	5	0	6	63	Contig110817887	11002		NoVirusDetected		NoVirusDetected	52840.0	100.0
+bin.202	4599429	187	6	54	57	Contig132000990	125228		NoVirusDetected		NoVirusDetected	4348886.0	94.0
+bin.203	369407	28	1	6	35	Contig74229630	18081		NoVirusDetected		NoVirusDetected	314676.0	85.0
+bin.204	1967616	118	3	8	55	Contig96984145	46743		NoVirusDetected		NoVirusDetected	1938334.0	98.0
+bin.205	1064364	75	4	7	68	Contig7807565	42179	1.0	dsDNAphage	|full	NoVirusDetected	1005564.0	94.0
+bin.206	6563406	365	18	13	57	Contig155191166	60578		NoVirusDetected		NoVirusDetected	6297557.0	95.0
+bin.207	298536	23	0	9	61	Contig115934873	21378		NoVirusDetected		NoVirusDetected	298536.0	100.0
+bin.208	2154348	133	0	8	48	Contig76652196	44688		NoVirusDetected		NoVirusDetected	2140735.0	99.0
+bin.209	306484	20	0	7	50	Contig130052286	34900		NoVirusDetected		NoVirusDetected	279304.0	91.0
+bin.210	208416	16	0	11	56	Contig76577926	21813	0.673	NCLDV	|full	NoVirusDetected	176486.0	84.0
+bin.211	12998	1	0	12	56	Contig103835100	12998		NoVirusDetected		NoVirusDetected	12998.0	100.0
+bin.212	394692	24	6	8	58	Contig65405927	87298	0.993	dsDNAphage	|full	NoVirusDetected	291341.0	73.0
+bin.213	1127190	61	0	14	64	Contig134943267	55027		NoVirusDetected		NoVirusDetected	1116156.0	99.0
+bin.214	1332716	93	6	11	62	Contig107586285	43915		NoVirusDetected		NoVirusDetected	1277164.0	95.0
+bin.215	458983	27	10	9	57	Contig135773547	43648	0.993	dsDNAphage	|full	NoVirusDetected	402011.0	87.0
+bin.216	8555702	298	15	18	57	Contig118926540	108456		NoVirusDetected		NoVirusDetected	8244624.0	96.0
+bin.217	859610	4	0	97	52	Contig92465560	351451		NoVirusDetected		NoVirusDetected	859610.0	100.0
+bin.218	2609753	142	2	10	64	Contig134044001	74380		NoVirusDetected		NoVirusDetected	2530870.0	96.0
+bin.219	346727	4	0	17	54	Contig10220833	274919		NoVirusDetected		NoVirusDetected	346727.0	100.0
+bin.220	40700	3	0	8	65	Contig79693103	18858		NoVirusDetected		NoVirusDetected	40700.0	100.0
+bin.221	1526181	102	3	8	39	Contig142273910	39013		NoVirusDetected		NoVirusDetected	1427896.0	93.0
+bin.222	3412410	111	13	12	57	Contig79040943	97081		NoVirusDetected		NoVirusDetected	3270221.0	95.0
+bin.223	1321911	81	0	8	55	Contig147837824	34150		NoVirusDetected		NoVirusDetected	1308965.0	99.0
+bin.224	296912	22	0	8	67	Contig97795664	24021		NoVirusDetected		NoVirusDetected	296912.0	100.0
+bin.225	759881	52	0	7	43	Contig143621008	24283		NoVirusDetected		NoVirusDetected	748794.0	98.0
+bin.226	1037737	44	0	13	51	Contig114575301	68154		NoVirusDetected		NoVirusDetected	986711.0	95.0
+bin.227	779905	11	0	18	50	Contig65970694	382278		NoVirusDetected		NoVirusDetected	779905.0	100.0
+bin.228	1884382	58	0	16	36	Contig19390668	249904		NoVirusDetected		NoVirusDetected	1798477.0	95.0
+bin.229	3895248	163	2	10	61	Contig134486800	74147		NoVirusDetected		NoVirusDetected	3860471.0	99.0
+bin.230	4157611	59	0	18	58	Contig63545376	319219		NoVirusDetected		NoVirusDetected	4134308.0	99.0
+bin.231	415470	26	0	8	53	Contig57408573	29666		NoVirusDetected		NoVirusDetected	399428.0	96.0
+bin.232	48146	4	0	5	39	Contig136865050	13038		NoVirusDetected		NoVirusDetected	37259.0	77.0
+bin.233	504755	39	0	9	60	Contig155962373	21985		NoVirusDetected		NoVirusDetected	504755.0	100.0
+bin.234	3089927	144	2	15	55	Contig99026934	83500		NoVirusDetected		NoVirusDetected	3014528.0	97.0
+bin.235	714295	50	0	26	62	Contig29158402	33166		NoVirusDetected		NoVirusDetected	714295.0	100.0
+bin.236	3104372	95	12	45	60	Contig38721041	154349		NoVirusDetected		NoVirusDetected	2832658.0	91.0
+bin.237	6888814	274	20	9	56	Contig53476062	203783		NoVirusDetected		NoVirusDetected	6648625.0	96.0
+bin.238	992928	74	7	7	65	Contig116904136	22720	0.787	dsDNAphage	|full	NoVirusDetected	909345.0	91.0
+bin.239	343986	24	0	9	63	Contig148004108	28027		NoVirusDetected		NoVirusDetected	332735.0	96.0
+bin.240	463339	34	3	7	46	Contig123814642	32149	0.98	dsDNAphage	|full	NoVirusDetected	408633.0	88.0
+bin.242	1300804	68	0	10	49	Contig152050896	61027		NoVirusDetected		NoVirusDetected	1236314.0	95.0
+bin.243	2251029	145	3	25	60	Contig68879171	35683		NoVirusDetected		NoVirusDetected	2215432.0	98.0
+bin.244	3316254	197	46	8	62	Contig54185626	52582	1.0	dsDNAphage	|full	NoVirusDetected	2991898.0	90.0
+bin.245	58981	5	0	6	57	Contig106259636	13570	0.52	NCLDV	|full	NoVirusDetected	45411.0	76.0
+bin.246	9321306	499	58	12	61	Contig146824259	83199		NoVirusDetected		NoVirusDetected	8879240.0	95.0
+bin.247	273712	21	0	7	41	Contig106896208	24409		NoVirusDetected		NoVirusDetected	273712.0	100.0
+bin.248	34490	3	0	10	64	Contig73751088	12996		NoVirusDetected		NoVirusDetected	34490.0	100.0
+bin.249	21781	2	2	6	60	Contig110225381	11303		NoVirusDetected		NoVirusDetected	11303.0	51.0
+bin.250	122532	10	0	6	39	Contig99798628	18053		NoVirusDetected		NoVirusDetected	122532.0	100.0
+bin.251	4293062	233	4	23	62	Contig99044538	78921		NoVirusDetected		NoVirusDetected	4222461.0	98.0
+bin.252	1734330	81	4	9	40	Contig111863060	67640		NoVirusDetected		NoVirusDetected	1707539.0	98.0
+bin.253	61871	5	0	9	53	Contig50886985	13879		NoVirusDetected		NoVirusDetected	61871.0	100.0
+bin.254	4545219	230	0	21	68	Contig66865026	84987		NoVirusDetected		NoVirusDetected	4518826.0	99.0
+bin.255	10238	1	0	6	61	Contig108448692	10238		NoVirusDetected		NoVirusDetected	10238.0	100.0
+bin.256	2804472	143	2	8	56	Contig29973367	100749		NoVirusDetected		NoVirusDetected	2757581.0	98.0
+bin.257	184801	10	7	8	36	Contig32740101	37349	1.0	dsDNAphage	|full	dsDNAphage	157370.0	85.0
+bin.258	315037	14	2	16	29	Contig154183097	78102	1.0	NCLDV	|full	NCLDV	272144.0	86.0
+bin.259	3062066	189	1	8	58	Contig154326305	42973		NoVirusDetected		NoVirusDetected	3008336.0	98.0
+bin.260	354806	22	0	8	41	Contig131161072	37486		NoVirusDetected		NoVirusDetected	343594.0	96.0
+bin.261	560464	13	19	10	38	Contig52811492	108093	0.947	dsDNAphage	|full	dsDNAphage	497006.0	88.0
+bin.262	150867	12	0	9	67	Contig103852432	17434		NoVirusDetected		NoVirusDetected	150867.0	100.0
+bin.263	3348173	190	33	15	61	Contig25304145	67149	1.0	dsDNAphage	|full	NoVirusDetected	2957806.0	88.0
+bin.264	536696	41	3	12	55	Contig97176329	20440		NoVirusDetected		NoVirusDetected	523548.0	97.0
+bin.265	135936	10	0	8	62	Contig138338881	24779		NoVirusDetected		NoVirusDetected	135936.0	100.0
+bin.266	1523309	105	6	8	68	Contig143478085	30414	0.953	dsDNAphage	|full	NoVirusDetected	1413667.0	92.0
+bin.267	1801040	53	1	13	71	Contig96139835	101185		NoVirusDetected		NoVirusDetected	1765807.0	98.0
+bin.268	2273461	154	13	8	70	Contig117862783	44199	0.993	dsDNAphage	|full	NoVirusDetected	2121649.0	93.0
+bin.269	5257431	83	0	20	65	Contig140205881	265911		NoVirusDetected		NoVirusDetected	5257431.0	100.0
+bin.270	944104	68	4	9	58	Contig139550599	25137		NoVirusDetected		NoVirusDetected	858689.0	90.0
+bin.273	82012	7	0	5	66	Contig16536353	13769		NoVirusDetected		NoVirusDetected	82012.0	100.0
+bin.274	1298482	67	0	9	44	Contig82956000	43992		NoVirusDetected		NoVirusDetected	1298482.0	100.0
+bin.275	222708	17	3	30	61	Contig125302234	21284	0.807	dsDNAphage	|full	NoVirusDetected	201424.0	90.0
+bin.276	70111	6	0	6	50	Contig136242393	13276		NoVirusDetected		NoVirusDetected	70111.0	100.0
+bin.277	1007700	65	0	26	64	Contig29973357	34062		NoVirusDetected		NoVirusDetected	993989.0	98.0
+bin.278	649031	35	1	23	57	Contig97084102	58454	0.893	dsDNAphage	|0_partial	NoVirusDetected	576718.0	88.0
+bin.279	328123	25	0	12	62	Contig153056487	17574		NoVirusDetected		NoVirusDetected	328123.0	100.0
+bin.280	530022	21	0	9	39	Contig155526407	61814		NoVirusDetected		NoVirusDetected	441098.0	83.0
+bin.281	754423	40	3	17	58	Contig4850007	38312		NoVirusDetected		NoVirusDetected	694922.0	92.0
+bin.282	21577	2	0	8	58	Contig133817142	11416		NoVirusDetected		NoVirusDetected	21577.0	100.0
+bin.283	245143	15	18	8	45	Contig7049875	28653	1.0	dsDNAphage	|full	dsDNAphage	220628.0	89.0
+bin.284	8379358	410	14	12	58	Contig142280048	82372		NoVirusDetected		NoVirusDetected	8097408.0	96.0
+bin.285	885925	63	0	15	63	Contig78149395	27586		NoVirusDetected		NoVirusDetected	875522.0	98.0
+bin.286	209277	8	0	137	61	Contig39062541	80638		NoVirusDetected		NoVirusDetected	172820.0	82.0
+bin.287	4022321	220	14	12	62	Contig91158033	95837	0.993	dsDNAphage	|full	NoVirusDetected	3728835.0	92.0
+bin.288	295861	19	0	9	53	Contig154326306	26602		NoVirusDetected		NoVirusDetected	295861.0	100.0
+bin.289	255381	21	0	58	61	Contig38374019	18167		NoVirusDetected		NoVirusDetected	255381.0	100.0
+bin.290	203156	14	1	12	55	Contig30969440	29843		NoVirusDetected		NoVirusDetected	187420.0	92.0
+bin.292	8470045	111	33	32	65	Contig134512161	556162		NoVirusDetected		NoVirusDetected	7549732.0	89.0
+bin.293	7118376	269	14	10	64	Contig49672649	130905		NoVirusDetected		NoVirusDetected	6867716.0	96.0
+bin.294	10792	1	0	5	66	Contig148608453	10792		NoVirusDetected		NoVirusDetected	10792.0	100.0
+bin.295	21370	2	0	5	60	Contig153629105	10942		NoVirusDetected		NoVirusDetected	21370.0	100.0
+bin.296	217543	5	0	12	67	Contig105040811	52611		NoVirusDetected		NoVirusDetected	217543.0	100.0
+bin.297	79321	7	0	7	61	Contig122700354	12766		NoVirusDetected		NoVirusDetected	79321.0	100.0
+bin.298	46218	4	0	12	62	Contig138510329	11979		NoVirusDetected		NoVirusDetected	46218.0	100.0
+bin.299	366650	28	0	9	60	Contig134389464	20860		NoVirusDetected		NoVirusDetected	356523.0	97.0
+bin.300	56241	5	0	45	62	Contig87077639	12428		NoVirusDetected		NoVirusDetected	56241.0	100.0
+bin.301	243927	21	0	10	62	Contig132991064	17624		NoVirusDetected		NoVirusDetected	233465.0	95.0
+bin.302	1720263	113	13	8	64	Contig70069983	34114		NoVirusDetected		NoVirusDetected	1557988.0	90.0
+bin.303	2173968	145	3	8	57	Contig74423308	33132		NoVirusDetected		NoVirusDetected	2091035.0	96.0
+bin.304	21097	2	0	14	59	Contig126082559	10779		NoVirusDetected		NoVirusDetected	21097.0	100.0
+bin.305	634997	42	0	7	32	Contig138253368	33953		NoVirusDetected		NoVirusDetected	624649.0	98.0
+bin.306	290604	16	20	11	35	Contig51807615	34307	1.0	dsDNAphage	|full	dsDNAphage	280584.0	96.0
+bin.307	1200569	84	12	37	65	Contig43466819	48857		NoVirusDetected		NoVirusDetected	1117063.0	93.0
+bin.308	1322361	41	0	18	37	Contig150121279	92126		NoVirusDetected		NoVirusDetected	1265278.0	95.0
+bin.309	814520	59	2	8	61	Contig23113021	26595		NoVirusDetected		NoVirusDetected	777698.0	95.0
+bin.310	119120	10	0	9	62	Contig83633583	17851		NoVirusDetected		NoVirusDetected	119120.0	100.0
+bin.311	2234913	152	3	7	38	Contig147228299	40372		NoVirusDetected		NoVirusDetected	2084467.0	93.0
+bin.312	552784	37	13	7	36	Contig99100643	41320	0.993	dsDNAphage	|full	NoVirusDetected	443121.0	80.0
+bin.313	206870	11	3	8	49	Contig86003695	54523	1.0	dsDNAphage	|full	dsDNAphage	126633.0	61.0
+bin.314	134625	9	0	11	57	Contig106171310	31094		NoVirusDetected		NoVirusDetected	134625.0	100.0
+bin.315	266865	19	0	7	67	Contig7506242	25533		NoVirusDetected		NoVirusDetected	266865.0	100.0
+bin.316	749995	49	5	20	64	Contig85853890	74275	1.0	dsDNAphage	|full	NoVirusDetected	675720.0	90.0
+bin.317	313444	23	0	6	42	Contig119693760	22170		NoVirusDetected		NoVirusDetected	313444.0	100.0
+bin.318	78919	4	0	7	27	Contig52951222	40548	0.933	NCLDV	|full	NCLDV	78919.0	100.0
+bin.319	300911	20	0	9	62	Contig41718318	32938		NoVirusDetected		NoVirusDetected	289667.0	96.0
+bin.320	6536095	198	8	21	57	Contig100764114	145429		NoVirusDetected		NoVirusDetected	6269829.0	95.0
+bin.321	70632	6	0	11	68	Contig142353830	14926		NoVirusDetected		NoVirusDetected	70632.0	100.0
+bin.322	3079225	27	0	36	66	Contig96623062	599834		NoVirusDetected		NoVirusDetected	3079225.0	100.0
+bin.323	648626	23	0	280	53	Contig101062885	67017		NoVirusDetected		NoVirusDetected	626530.0	96.0
+bin.324	2933646	35	1	15	56	Contig152683926	491472		NoVirusDetected		NoVirusDetected	2858142.0	97.0
+bin.325	73418	6	0	10	59	Contig152808258	16619		NoVirusDetected		NoVirusDetected	73418.0	100.0
+bin.326	780903	13	0	15	50	Contig92187080	152129		NoVirusDetected		NoVirusDetected	757673.0	97.0
+bin.327	160498	13	0	44	60	Contig65852048	16147		NoVirusDetected		NoVirusDetected	160498.0	100.0
+bin.328	4104594	236	21	11	58	Contig111762447	72381		NoVirusDetected		NoVirusDetected	3839621.0	93.0
+bin.329	1004355	62	4	12	52	Contig149830810	49834	1.0	dsDNAphage	|full	NoVirusDetected	920640.0	91.0
+bin.330	1014703	52	9	21	55	Contig41839793	90480	0.993	dsDNAphage	|full	NoVirusDetected	861303.0	84.0
+bin.331	292874	10	10	16	32	Contig138363403	90903	0.993	dsDNAphage	|full	dsDNAphage	277982.0	94.0
+bin.332	2975636	32	0	120	54	Contig1448207	449583		NoVirusDetected		NoVirusDetected	2975636.0	100.0
+bin.333	1559242	96	5	9	54	Contig148781471	57864		NoVirusDetected		NoVirusDetected	1453876.0	93.0
+bin.334	177657	7	4	19	40	Contig146465812	60882	0.993	dsDNAphage	|full	dsDNAphage	145373.0	81.0
+bin.335	109216	8	0	8	54	Contig46049805	16955		NoVirusDetected		NoVirusDetected	109216.0	100.0
+bin.336	204124	11	0	11	57	Contig34620406	35313		NoVirusDetected		NoVirusDetected	192243.0	94.0
+bin.337	1375147	89	41	9	60	Contig131552658	62367	0.98	dsDNAphage	|full	NoVirusDetected	952838.0	69.0
+bin.338	1641841	103	2	16	66	Contig12648727	55577	1.0	dsDNAphage	|full	NoVirusDetected	1575061.0	95.0
+bin.339	1682406	114	4	9	59	Contig117214287	30663		NoVirusDetected		NoVirusDetected	1573476.0	93.0
+bin.340	2381809	44	1	32	62	Contig152131444	147576		NoVirusDetected		NoVirusDetected	2345199.0	98.0
+bin.341	289510	6	0	15	25	Contig96040705	70174		NoVirusDetected		NoVirusDetected	239563.0	82.0
+bin.342	877911	27	0	77	54	Contig156105493	62209		NoVirusDetected		NoVirusDetected	806482.0	91.0
+bin.343	50888	4	0	5	40	Contig100746566	16047		NoVirusDetected		NoVirusDetected	50888.0	100.0
+bin.344	325668	21	0	27	55	Contig102065620	26068		NoVirusDetected		NoVirusDetected	325668.0	100.0
+bin.345	3439150	70	12	21	39	Contig147610197	232050		NoVirusDetected		NoVirusDetected	3193400.0	92.0
+bin.346	301874	25	0	8	62	Contig127284646	18257		NoVirusDetected		NoVirusDetected	301874.0	100.0
+bin.347	3403811	74	9	14	58	Contig114616936	138960		NoVirusDetected		NoVirusDetected	3129890.0	91.0
+bin.348	5193581	50	24	238	52	Contig153878465	528401		NoVirusDetected		NoVirusDetected	4940648.0	95.0
+bin.349	255271	19	0	7	40	Contig151722691	20297		NoVirusDetected		NoVirusDetected	255271.0	100.0
+bin.350	764900	55	0	14	56	Contig152057271	28085		NoVirusDetected		NoVirusDetected	764900.0	100.0
+bin.351	988272	70	0	29	59	Contig36401318	40469		NoVirusDetected		NoVirusDetected	988272.0	100.0
+bin.352	166475	8	0	42	55	Contig129798836	26977		NoVirusDetected		NoVirusDetected	166475.0	100.0
+bin.353	111813	9	0	13	59	Contig136443734	17883		NoVirusDetected		NoVirusDetected	111813.0	100.0
+bin.354	25309	2	0	5	58	Contig70763268	14541		NoVirusDetected		NoVirusDetected	25309.0	100.0
+bin.355	446941	30	1	8	54	Contig117999916	27575		NoVirusDetected		NoVirusDetected	394033.0	88.0
+bin.356	1539069	107	0	13	64	Contig54666157	59341		NoVirusDetected		NoVirusDetected	1526096.0	99.0
+bin.357	59966	5	2	5	36	Contig112377590	14376		NoVirusDetected		NoVirusDetected	37568.0	62.0
+bin.358	279048	21	0	7	55	Contig75637324	20553		NoVirusDetected		NoVirusDetected	266979.0	95.0
+bin.359	65521	6	0	5	60	Contig101913327	11871		NoVirusDetected		NoVirusDetected	54443.0	83.0
+bin.360	1832225	35	0	11	44	Contig8502600	171983		NoVirusDetected		NoVirusDetected	1794309.0	97.0
+bin.361	144498	8	3	7	41	Contig66730859	41349	1.0	dsDNAphage	|full	NoVirusDetected	103149.0	71.0
+bin.362	117886	9	1	6	61	Contig90861249	18273	0.907	dsDNAphage	|full	NoVirusDetected	99613.0	84.0
+bin.363	805361	59	6	6	37	Contig7624685	33873	0.993	dsDNAphage	|full	NoVirusDetected	759090.0	94.0
+bin.364	1287413	56	0	11	49	Contig106253679	60277		NoVirusDetected		NoVirusDetected	1264560.0	98.0
+bin.365	1849750	108	5	15	34	Contig69905524	46989		NoVirusDetected		NoVirusDetected	1693574.0	91.0
+bin.366	507665	21	29	11	34	Contig47126208	62788	0.967	dsDNAphage	|full	NoVirusDetected	349438.0	68.0
+bin.367	317448	10	0	432	57	Contig38844471	120006		NoVirusDetected		NoVirusDetected	317448.0	100.0
+bin.368	45860	4	0	8	63	Contig80666389	13902	0.707	NCLDV	|full	NoVirusDetected	31958.0	69.0
+bin.369	1174480	84	0	7	44	Contig35191248	29631		NoVirusDetected		NoVirusDetected	1162831.0	99.0
+bin.370	306063	24	0	7	63	Contig123892542	18765		NoVirusDetected		NoVirusDetected	293719.0	95.0
+bin.371	552975	22	1	9	57	Contig97526523	66510		NoVirusDetected		NoVirusDetected	527386.0	95.0
+bin.372	173282	14	0	6	55	Contig98986053	18210		NoVirusDetected		NoVirusDetected	173282.0	100.0
+bin.373	24114	2	0	5	55	Contig47348243	14069		NoVirusDetected		NoVirusDetected	14069.0	58.0
+bin.374	269668	6	2	11	49	Contig141340664	137786	0.987	NCLDV	|full	NCLDV	253800.0	94.0
+bin.375	1386483	67	7	11	34	Contig18686155	55716		NoVirusDetected		NCLDV	729169.0	52.0
+bin.376	104803	8	0	13	55	Contig39516248	21842		NoVirusDetected		NoVirusDetected	104803.0	100.0
+bin.377	576704	39	1	18	63	Contig40022617	30006		NoVirusDetected		NoVirusDetected	554876.0	96.0
+bin.378	3395750	126	0	15	63	Contig126690116	84118		NoVirusDetected		NoVirusDetected	3380505.0	99.0
+bin.379	267353	12	9	12	54	Contig36340736	61399	1.0	dsDNAphage	|full	NoVirusDetected	147089.0	55.0
+bin.380	10691	1	0	6	59	Contig50814682	10691		NoVirusDetected		NoVirusDetected	10691.0	100.0
+bin.381	108576	8	0	7	51	Contig139213577	28262		NoVirusDetected		NoVirusDetected	108576.0	100.0
+bin.382	1252789	74	0	11	60	Contig119353790	52059		NoVirusDetected		NoVirusDetected	1252789.0	100.0
+bin.383	244804	7	8	11	60	Contig138041035	85233	0.96	dsDNAphage	|full	dsDNAphage	228965.0	93.0
+bin.384	9024057	573	15	11	57	Contig41674366	69064		NoVirusDetected		NoVirusDetected	8781076.0	97.0
+bin.385	139039	10	0	6	44	Contig116910096	20144		NoVirusDetected		NoVirusDetected	139039.0	100.0
+bin.386	6145224	210	0	23	62	Contig50341742	199787		NoVirusDetected		NoVirusDetected	6131319.0	99.0
+bin.387	301117	24	0	9	65	Contig89057341	21277		NoVirusDetected		NoVirusDetected	301117.0	100.0
+bin.388	218117	7	0	12	56	Contig45549437	72656		NoVirusDetected		NoVirusDetected	218117.0	100.0
+bin.389	295489	1	12	28	45	Contig142949947	295489	0.967	dsDNAphage	|full	dsDNAphage	295489.0	100.0
+bin.390	138963	11	0	10	62	Contig37591067	22143		NoVirusDetected		NoVirusDetected	138963.0	100.0
+bin.391	130211	9	0	7	35	Contig24742193	21863	0.82	dsDNAphage	|full	dsDNAphage	68398.0	52.0
+bin.392	334701	15	15	9	32	Contig45399868	41530	1.0	dsDNAphage	|full	dsDNAphage	290783.0	86.0
+bin.393	5461556	28	4	27	60	Contig11479494	736820	0.913	dsDNAphage	|0_partial	NoVirusDetected	4642336.0	85.0
+bin.394	659365	45	0	7	45	Contig120518443	26468		NoVirusDetected		NoVirusDetected	659365.0	100.0
+bin.395	351669	26	0	39	61	Contig90798455	24521		NoVirusDetected		NoVirusDetected	351669.0	100.0
+bin.396	1520354	120	0	6	55	Contig11372003	27632		NoVirusDetected		NoVirusDetected	1509349.0	99.0
+bin.397	2998153	34	0	14	60	Contig141714815	286517		NoVirusDetected		NoVirusDetected	2998153.0	100.0
+bin.398	308649	24	0	7	58	Contig78972250	20884		NoVirusDetected		NoVirusDetected	308649.0	100.0
+bin.399	236088	12	0	10	56	Contig109918075	39608	0.507	NCLDV	|full	NoVirusDetected	196480.0	83.0
+bin.400	2552255	118	11	11	54	Contig127338768	103575		NoVirusDetected		NoVirusDetected	2397800.0	93.0
+bin.401	1977707	70	8	15	43	Contig106842892	94119		NoVirusDetected		NoVirusDetected	1875349.0	94.0
+bin.402	147714	11	5	6	36	Contig93097039	25737	1.0	dsDNAphage	|full	NoVirusDetected	121977.0	82.0
+bin.403	1303017	77	23	8	64	Contig54252602	77991	0.993	dsDNAphage	|full	NoVirusDetected	1054638.0	80.0
+bin.404	3324873	129	2	10	58	Contig67593225	83988		NoVirusDetected		NoVirusDetected	3307000.0	99.0
+bin.405	728744	27	0	11	54	Contig123281052	76960		NoVirusDetected		NoVirusDetected	728744.0	100.0
+bin.406	582437	11	18	12	41	Contig82077176	172101	0.907	dsDNAphage	|full	dsDNAphage	401994.0	69.0
+bin.407	73163	5	0	11	44	Contig12725329	21263		NoVirusDetected		NoVirusDetected	73163.0	100.0
+bin.408	112637	9	4	6	62	Contig94216411	24713	0.993	dsDNAphage	|full	dsDNAphage	68785.0	61.0
+bin.409	211048	10	5	10	67	Contig41425894	34591	0.913	dsDNAphage	|full	dsDNAphage	186959.0	88.0
+bin.410	2225526	67	0	12	58	Contig80603114	186979		NoVirusDetected		NoVirusDetected	2225526.0	100.0
+bin.411	225530	8	0	28	54	Contig144707685	84212		NoVirusDetected		NoVirusDetected	225530.0	100.0
+bin.412	25796	2	0	9	55	Contig127470784	14795		NoVirusDetected		NoVirusDetected	25796.0	100.0
+bin.413	204262	1	5	35	31	Contig15618873	204262	1.0	dsDNAphage	|full	dsDNAphage	204262.0	100.0
+bin.414	40724	3	0	9	67	Contig77715050	16929		NoVirusDetected		NoVirusDetected	40724.0	100.0
+bin.415	1712659	103	0	10	63	Contig138027295	44310		NoVirusDetected		NoVirusDetected	1712659.0	100.0
+bin.416	1026997	32	0	10	44	Contig42442191	130024		NoVirusDetected		NoVirusDetected	1026997.0	100.0
+bin.417	325490	24	0	10	65	Contig49049585	20915		NoVirusDetected		NoVirusDetected	325490.0	100.0
+bin.418	243179	16	0	16	46	Contig99091225	26071		NoVirusDetected		NoVirusDetected	154260.0	63.0
+bin.419	319933	25	0	6	40	Contig145341258	21033		NoVirusDetected		NoVirusDetected	294080.0	91.0
+bin.420	105923	2	2	39	58	Contig90179451	95624	0.993	dsDNAphage	|full	dsDNAphage	95624.0	90.0
+bin.421	656809	47	0	13	40	Contig54587852	28798		NoVirusDetected		NoVirusDetected	630485.0	95.0
+bin.422	663402	49	0	8	61	Contig126990189	26607		NoVirusDetected		NoVirusDetected	663402.0	100.0
+bin.423	288418	22	1	7	66	Contig133568798	19575		NoVirusDetected		NoVirusDetected	278343.0	96.0
+bin.424	2256912	9	1	23	35	Contig146564003	530225		NoVirusDetected		NoVirusDetected	1789005.0	79.0
+bin.425	2304041	128	4	9	38	Contig111354288	98161		NoVirusDetected		NoVirusDetected	2164361.0	93.0
+bin.426	530883	38	2	19	56	Contig31434724	45198		NoVirusDetected		NoVirusDetected	500634.0	94.0
+bin.427	393334	1	4	12	45	Contig49617119	393334	0.967	dsDNAphage	|full	dsDNAphage	393334.0	100.0
+bin.428	590346	16	1	11	26	Contig156292556	108892	0.633	NCLDV	|full	NCLDV	336133.0	56.0
+bin.429	366365	30	0	7	60	Contig108247648	15891		NoVirusDetected		NoVirusDetected	366365.0	100.0
+bin.430	547794	31	1	9	40	Contig31140504	41478		NoVirusDetected		NoVirusDetected	512111.0	93.0
+bin.431	479460	25	1	7	51	Contig51082033	38955	0.853	dsDNAphage	|0_partial	NoVirusDetected	377405.0	78.0
+bin.432	1786917	113	0	11	64	Contig101250527	37547		NoVirusDetected		NoVirusDetected	1786917.0	100.0
+bin.433	745245	7	0	17	47	Contig143933204	217911		NoVirusDetected		NoVirusDetected	745245.0	100.0
+bin.434	116724	10	0	6	37	Contig124054574	13633		NoVirusDetected		NoVirusDetected	104940.0	89.0
+bin.435	123137	9	0	6	50	Contig156461036	19518		NoVirusDetected		NoVirusDetected	123137.0	100.0
+bin.436	139143	10	0	7	38	Contig123862565	19100	0.827	dsDNAphage	|full	dsDNAphage	114548.0	82.0
+bin.437	389072	16	6	12	54	Contig107781913	48696		NoVirusDetected		NoVirusDetected	346494.0	89.0
+bin.438	205525	16	0	13	61	Contig87290155	18307		NoVirusDetected		NoVirusDetected	205525.0	100.0
+bin.439	43720	3	0	39	60	Contig108377815	19370		NoVirusDetected		NoVirusDetected	43720.0	100.0
+bin.440	228123	7	7	9	38	Contig141813424	96764	0.733	dsDNAphage	|full	dsDNAphage	228123.0	100.0
+bin.441	876684	11	0	13	50	Contig95140005	268368		NoVirusDetected		NoVirusDetected	876684.0	100.0
+bin.442	862828	10	0	14	50	Contig93700123	189391		NoVirusDetected		NoVirusDetected	862828.0	100.0
+bin.443	78006	7	0	5	41	Contig111768382	13734	0.94	NCLDV	|full	NoVirusDetected	64272.0	82.0
+bin.444	1011851	12	0	32	49	Contig151673508	256400		NoVirusDetected		NoVirusDetected	1011851.0	100.0
+bin.445	539613	30	0	8	44	Contig129714253	29400		NoVirusDetected		NoVirusDetected	539613.0	100.0
+bin.446	748445	55	1	7	50	Contig106972589	31813		NoVirusDetected		NoVirusDetected	738335.0	98.0
+bin.447	162961	11	0	18	54	Contig141377541	28011		NoVirusDetected		NoVirusDetected	162961.0	100.0
+bin.448	848151	38	1	9	35	Contig150374865	56009		NoVirusDetected		NoVirusDetected	754582.0	88.0
+bin.449	224688	1	9	21	41	Contig59135421	224688	0.993	dsDNAphage	|full	dsDNAphage	224688.0	100.0
+bin.450	2286246	16	0	64	62	Contig127694495	282890		NoVirusDetected		NoVirusDetected	2286246.0	100.0
+bin.451	3465648	102	8	16	59	Contig130989529	147411		NoVirusDetected		NoVirusDetected	3344682.0	96.0
+bin.452	85421	7	0	10	57	Contig141837825	20324		NoVirusDetected		NoVirusDetected	85421.0	100.0
+bin.453	455770	14	6	11	53	Contig145882022	74321	0.687	NCLDV	|full	dsDNAphage	310227.0	68.0
+bin.454	539811	14	0	106	51	Contig144824565	108357		NoVirusDetected		NoVirusDetected	522919.0	96.0
+bin.455	380061	24	8	12	61	Contig47844613	67823	1.0	dsDNAphage	|full	NoVirusDetected	312238.0	82.0
+bin.456	254932	6	0	30	61	Contig144978248	87741		NoVirusDetected		NoVirusDetected	183478.0	71.0
+bin.457	247292	5	3	44	49	Contig62008141	86600	0.72	dsDNAphage	|full	dsDNAphage	247292.0	100.0
+bin.458	3475187	154	5	17	44	Contig10646936	88468		NoVirusDetected		NoVirusDetected	3402570.0	97.0
+bin.459	465705	18	15	9	51	Contig62897875	99311	0.927	dsDNAphage	|full	dsDNAphage	394979.0	84.0
+bin.460	856008	67	0	13	58	Contig42099517	29869		NoVirusDetected		NoVirusDetected	856008.0	100.0
+bin.461	45228	4	0	6	57	Contig37128234	11993		NoVirusDetected		NoVirusDetected	45228.0	100.0
+bin.462	2022543	118	0	9	59	Contig83363569	45169		NoVirusDetected		NoVirusDetected	2022543.0	100.0
+bin.463	2744865	119	0	14	56	Contig155104055	97179		NoVirusDetected		NoVirusDetected	2706326.0	98.0
+bin.464	786676	14	0	11	52	Contig64373737	256933		NoVirusDetected		NoVirusDetected	786676.0	100.0
+bin.465	1208329	34	0	10	38	Contig34247392	98490		NoVirusDetected		NoVirusDetected	1208329.0	100.0
+bin.466	296704	23	5	7	38	Contig123535798	20882		NoVirusDetected		NoVirusDetected	239318.0	80.0
+bin.467	772366	34	0	10	53	Contig155644712	77612		NoVirusDetected		NoVirusDetected	721768.0	93.0
+bin.468	5023591	201	10	21	58	Contig25806915	150806		NoVirusDetected		NoVirusDetected	4880291.0	97.0
+bin.469	151861	12	0	9	55	Contig677441	21861		NoVirusDetected		NoVirusDetected	151861.0	100.0
+bin.470	198869	9	0	50	61	Contig113597727	49708		NoVirusDetected		NoVirusDetected	185747.0	93.0
+bin.471	1354473	46	1	15	43	Contig85946112	100809		NoVirusDetected		NoVirusDetected	1310925.0	96.0
+bin.472	201723	11	0	26	60	Contig110119799	32562		NoVirusDetected		NoVirusDetected	201723.0	100.0
+bin.473	20701	2	0	7	67	Contig46033098	10352		NoVirusDetected		NoVirusDetected	20701.0	100.0
+bin.474	162256	13	0	8	54	Contig104322579	20312		NoVirusDetected		NoVirusDetected	152139.0	93.0
+bin.475	1910470	119	19	9	57	Contig151803409	57502		NoVirusDetected		NoVirusDetected	1562594.0	81.0
+bin.476	216413	1	14	391	49	Contig73111104	216413	1.0	dsDNAphage	|full	dsDNAphage	216413.0	100.0
+bin.477	1257847	68	1	28	44	Contig98355240	45031		NoVirusDetected		NoVirusDetected	1207109.0	95.0
+bin.478	5545940	231	10	9	59	Contig67016230	105324		NoVirusDetected		NoVirusDetected	5374878.0	96.0
+bin.479	98080	8	0	32	63	Contig85825211	19519		NoVirusDetected		NoVirusDetected	98080.0	100.0
+bin.480	4782528	94	4	18	62	Contig45477305	225453		NoVirusDetected		NoVirusDetected	4737058.0	99.0
+bin.481	751426	12	0	12	51	Contig99104477	151155		NoVirusDetected		NoVirusDetected	739368.0	98.0
+bin.482	196525	8	15	10	68	Contig150763770	50915	0.993	dsDNAphage	|full	dsDNAphage	185011.0	94.0
+bin.483	837333	60	5	10	62	Contig19304049	26165		NoVirusDetected		NoVirusDetected	814422.0	97.0
+bin.484	617956	46	8	8	57	Contig58440972	61758	0.987	dsDNAphage	|full	NoVirusDetected	479639.0	77.0
+bin.485	87848	7	0	6	58	Contig153828670	18341	0.667	dsDNAphage	|full	dsDNAphage	56807.0	64.0
+bin.486	2512608	172	3	8	63	Contig100863676	31270		NoVirusDetected		NoVirusDetected	2441521.0	97.0
+bin.487	32559	3	0	5	59	Contig41447947	10996		NoVirusDetected		NoVirusDetected	32559.0	100.0
+bin.488	130157	8	5	9	41	Contig1314018	38717	0.993	dsDNAphage	|full	dsDNAphage	94583.0	72.0
+bin.489	462274	21	16	8	50	Contig115376184	48674	0.98	dsDNAphage	|full	dsDNAphage	333342.0	72.0
+bin.490	1328052	56	0	14	37	Contig121133879	65033		NoVirusDetected		NoVirusDetected	1240439.0	93.0
+bin.491	893440	7	0	38	51	Contig19966301	229978		NoVirusDetected		NoVirusDetected	893440.0	100.0
+bin.492	410759	26	0	47	63	Contig30214296	40318		NoVirusDetected		NoVirusDetected	410759.0	100.0
+bin.493	3047197	72	1	12	61	Contig121910950	205167		NoVirusDetected		NoVirusDetected	3015583.0	98.0
+bin.494	244672	2	12	18	29	Contig84139376	212700	0.993	dsDNAphage	|full	dsDNAphage	244672.0	100.0
+bin.495	696893	50	1	21	62	Contig27406593	35979		NoVirusDetected		NoVirusDetected	686374.0	98.0
+bin.496	3210759	18	0	23	61	Contig120823031	689751		NoVirusDetected		NoVirusDetected	3210759.0	100.0
+bin.497	6185793	29	0	20	60	Contig113561588	1631710		NoVirusDetected		NoVirusDetected	6185793.0	100.0
+bin.498	333625	19	1	10	30	Contig17558040	26605		NoVirusDetected		NoVirusDetected	286855.0	85.0
+bin.499	597464	16	7	10	48	Contig150047177	166775	0.953	NCLDV	|full	NCLDV	539276.0	90.0
+bin.500	1913853	118	0	15	63	Contig42259655	55231		NoVirusDetected		NoVirusDetected	1902977.0	99.0
+bin.501	294600	18	0	11	46	Contig5610937	31108		NoVirusDetected		NoVirusDetected	294600.0	100.0
+bin.502	618824	38	0	16	72	Contig108537716	55199		NoVirusDetected		NoVirusDetected	618824.0	100.0
+bin.504	1113303	80	18	9	63	Contig147068327	46468	0.987	dsDNAphage	|full	NoVirusDetected	884952.0	79.0
+bin.505	1236816	12	0	12	36	Contig133501235	395120		NoVirusDetected		NoVirusDetected	1226609.0	99.0
+bin.506	228879	3	13	37	58	Contig72725832	116115	1.0	dsDNAphage	|full	dsDNAphage	228879.0	100.0
+bin.508	293021	24	0	6	63	Contig9538561	16850		NoVirusDetected		NoVirusDetected	293021.0	100.0
+bin.unbinned	104731794	4645	5184	19	53	Contig151877900	190498	0.993	dsDNAphage	|full			
