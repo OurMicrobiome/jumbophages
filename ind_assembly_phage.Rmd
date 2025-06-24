@@ -2,15 +2,11 @@
 title: "Targeted enrichment and discovery of jumbo phages"
 author: "Jeffrey Blanchard"
 date: "5/4/2023"
-output:
-  html_document:
-    toc: true
-    toc_depth: 4
-    theme: united
-    highlight: tango
 ---
 
-# This report is an analysis of the Barre Woods filter metagenomes from the individual assembles.  Assembly, binning, quality control and classification was done on KBase https://narrative.kbase.us/narrative/145959  . The checkv and virsorter files were downloaded to this project folder.
+# Overview
+
+This report is an analysis of the Barre Woods filter metagenomes from the individual assembles.  Assembly, binning, quality control and classification was done on KBase https://narrative.kbase.us/narrative/145971  . The checkv and virsorter files were downloaded to this project folder.
 
 ## Load Libraries
 
@@ -25,9 +21,9 @@ library(DT)
 ### Import vsorter files. Filter to include just the dsDNAphages
 
 ```{r}
-virsorter <- read_tsv("data_individual_assembly/all-ind-virsorter-final-viral-score.tsv") %>% 
-  filter(max_score_group == "dsDNAphage") %>% 
-  select(-c(dsDNAphage, ssDNA, NCLDV, lavidaviridae)) %>% 
+virsorter <- read_tsv("data_individual_assembly/all-ind-virsorter-final-viral-score.tsv") |> 
+  filter(max_score_group == "dsDNAphage") |> 
+  select(-c(dsDNAphage, ssDNA, NCLDV, lavidaviridae)) |> 
   rename("contig_id" = "seqname")
 ```
 
@@ -45,7 +41,7 @@ virsorter_checkv <- left_join(virsorter, checkv, by = "contig_id")
 ### filter to high quality and complete
 
 ```{r}
-virsorter_checkv_HQ <- virsorter_checkv %>% 
+virsorter_checkv_HQ <- virsorter_checkv |> 
   filter(checkv_quality == "Complete" | checkv_quality == "High-quality")
 ```
 
@@ -59,17 +55,17 @@ write_tsv(virsorter_checkv_HQ, "data_individual_assembly/all-ind-virsorter_check
 
 ### Barchart of checkv_quality
 ```{r}
-virsorter_checkv %>% 
+virsorter_checkv |>  
 ggplot(aes(x = checkv_quality)) + 
   geom_bar() 
 ```
 
 ### Table with % checkv_quality in each category
 ```{r}
-virsorter_checkv %>% 
-  mutate(across(checkv_quality, as_factor)) %>% 
-  group_by(checkv_quality) %>% 
-  summarise(n = n()) %>%
+virsorter_checkv |> 
+  mutate(across(checkv_quality, as_factor)) |> 
+  group_by(checkv_quality) |> 
+  summarise(n = n()) |>
   mutate(freq = n / sum(n))
 ```
 
@@ -77,7 +73,7 @@ virsorter_checkv %>%
 ### Histogram
 
 ```{r}
-virsorter_checkv %>% 
+virsorter_checkv |> 
 ggplot(aes(x = length, fill = checkv_quality)) + 
   geom_histogram(colour = "black",  binwidth=10000) +
   ggtitle("Genome size of Phage") +
@@ -87,7 +83,7 @@ ggplot(aes(x = length, fill = checkv_quality)) +
 ```
 
 ```{r}
-virsorter_checkv_HQ %>% 
+virsorter_checkv_HQ |> 
 ggplot(aes(x = length, fill = checkv_quality)) + 
   geom_histogram(colour = "black",  binwidth=10000) +
   ggtitle("Genome size of Phage") +

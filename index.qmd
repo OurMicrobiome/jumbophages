@@ -1,0 +1,8 @@
+---
+title: "Jumbophages"
+---
+
+This is landing page for the Jumbo Phages project with a rendering of hmtl files from the [Jumbo Phages repository](https://github.com/ourmicrobiome/jumbophages).
+
+* [Co-Assembly](co_assembly_phage.html)
+* [Ind-Assembly](ind_assembly_phage.html)
